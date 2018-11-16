@@ -361,7 +361,9 @@
                                     </div>
                                     <div class="news-feed_item_desc tab-content" id="myTabContent">
                                         <div class="tab-pane fade show active" id="post" role="tabpanel" aria-labelledby="post-tab">
-                                            <textarea name="" id="" placeholder="ტექსტის ადგილი"></textarea>
+                                             <p class="lead emoji-picker-container new-txt">
+                                                <input type="email" class="form-control comment-txt" placeholder="ტექსტის ადგილი" data-emojiable="true">
+                                             </p>
                                         </div>
                                         <div class="tab-pane fade" id="photo" role="tabpanel" aria-labelledby="photo-tab">
                                             <div class="d-flex photos-block">
@@ -386,11 +388,26 @@
                                                     <input type="file" onchange="readURL(this);"  class="click-input">
                                                 </div>
                                             </div>
+                                            <p class="lead emoji-picker-container new-txt">
+                                                <input type="email" class="form-control comment-txt" placeholder="ტექსტის ადგილი" data-emojiable="true">
+                                            </p>
                                         </div>
-                                        <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">789</div>
+                                        <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
+                                            <div class="video-block d-flex">
+                                                <div class="image">
+                                                    <img src="uploads/images/bg-photo.png" alt="">
+                                                </div>
+                                                <div class="desc">
+                                                    <input type="text" placeholder="ვიდეოს ლინკი" class="video-block_input">
+                                                    <button class="upload">ატვირთვა</button>
+                                                </div>
+                                            </div>
+                                            <p class="lead emoji-picker-container new-txt">
+                                                <input type="email" class="form-control comment-txt" placeholder="ტექსტის ადგილი" data-emojiable="true">
+                                            </p>
+                                        </div>
                                         <div class="tab-pane fade" id="poll" role="tabpanel" aria-labelledby="poll-tab">
-                                            <textarea class="poll-txt" placeholder="გამოკითხვის ტექსტის ადგილი"></textarea>
-                                            <div class="answer-block">
+                                            <div class="answer-block add-poll-block">
                                                 <div class="answer">
                                                     <input type="text" placeholder="პასუხი">
                                                 </div>
@@ -399,9 +416,11 @@
                                                 </div>
                                             </div>
                                             <button class="new-answer">პასუხის ველის დამატება</button>
+                                            <p class="lead emoji-picker-container new-txt">
+                                                <input type="email" class="form-control comment-txt" placeholder="გამოკითხვის ტექსტის ადგილი" data-emojiable="true">
+                                            </p>
                                         </div>
                                         <div class="tab-pane fade" id="event" role="tabpanel" aria-labelledby="event-tab">
-                                            <textarea class="poll-txt" placeholder="ტექსტის ადგილი"></textarea>
                                             <div class="answer-block">
                                                 <div class="answer">
                                                     <input type="text" placeholder="ჩატარების ადგილი">
@@ -410,12 +429,15 @@
                                                     <input type="text" placeholder="ჩატარების თარიღი" class="date-event">
                                                 </div>
                                             </div>
+                                            <p class="lead emoji-picker-container new-txt">
+                                                <input type="email" class="form-control comment-txt" placeholder="ტექსტის ადგილი" data-emojiable="true">
+                                            </p>
                                         </div>
                                     </div>
                                     <div class="add-comment">
                                         <div class="d-flex justify-content-between">
-                                            <p class="lead emoji-picker-container">
-                                                <input type="email" class="form-control comment-txt" placeholder="სათაურის ადგილი" data-emojiable="true">
+                                            <div class="title-block d-flex">
+                                                <input type="text" placeholder="სათაურის ადგილი" class="title-input">
                                                 <button class="clicker">
                                                     <input type="file" class="attach">
                                                     <i class="fas fa-camera camera-icon"></i>
@@ -430,8 +452,8 @@
                                                     <input type="file" class="file-upload">
                                                     <img src="images/paperclip@2x.png" class="paperclip-icon" alt="">
                                                 </button>
-                                            </p>
-                                            <input type="submit" value="გაგზავნა" class="sent">
+                                                <input type="submit" value="გაგზავნა" class="sent">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

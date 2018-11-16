@@ -968,7 +968,7 @@ input{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-s
                 display: block;
                 position: relative;
                 padding-left: 15px;
-                                                                            cursor: pointer;
+                cursor: pointer;
                 font-size: 22px;
                 -webkit-user-select: none;
                 -moz-user-select: none;
@@ -1572,13 +1572,36 @@ input{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-s
         .tab-content{
           margin-top: 15px;
           .tab-pane{
-            textarea{
+            .new-txt{
               margin-top: 15px;
-              padding-left: 10px;
               border: none;
               height: 70px;
               width: 100%;
               @include font-style($primary-font,12px,$text);
+              .emoji-wysiwyg-editor{
+                border: none;
+              }
+              .form-control{
+                padding: 3px;
+                @include box-shadow-none;
+                @include font-style($primary-font,12px,#535353);
+              }
+              i{
+                background-image: url(../../images/smile@2x.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 17px;
+                width: 58px;
+                height: 20px;
+                right: 120px;
+                border-left: 1px solid #dfdfdf;
+                bottom: -50px;
+                top: initial;
+                z-index: 13;
+                @media (max-width: 767px){
+                  display: none;
+                }
+              }
             }
             .photos-block{
               .photo-item{
@@ -1649,6 +1672,9 @@ input{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-s
                 border: 1px solid #E9E9E9;
                 @include border-radius(3px);
                 @include font-style($primary-font,12px,$text);
+                @media (max-width: 575px){
+                  width: 100%;
+                }
               }
             }
             .new-answer{
@@ -1756,21 +1782,6 @@ input{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-s
             .emoji-picker-container{
               width: calc(100% - 100px);
             }
-            .emoji-picker-icon, .paperclip, .calendar, .clicker, .datepicker>div .form-control{
-              width: 38px!important;
-            }
-            .paperclip{
-              right: 38px!important;
-            }
-            .paperclip{
-              right: 38px!important;
-            }
-            .calendar{
-              right: 75px!important;
-            }
-            .clicker{
-              right: 113px!important;
-            }
             .sent{
               width: 90px;
               padding: 8px;
@@ -1779,19 +1790,6 @@ input{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-s
           }
           @media (max-width: 575px){
             padding: 10px 5px;
-            .paperclip{
-              right: -12px!important;
-            }
-            .calendar{
-              right: 25px!important;
-            }
-            .clicker{
-              right: 63px!important;
-              border-right: none;
-            }
-            .sent{
-              padding: 6px;
-            }
             .comment-txt{
               padding: 12px 105px 10px 10px;
             }
@@ -2906,6 +2904,91 @@ input{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 100%; box-s
       img{
         width: 80px;
       }
+    }
+  }
+}
+.title-block{
+  width: 100%;
+  position: relative;
+  .title-input{
+    @include font-style($primary-font,12px,#535353);
+    border: none;
+  }
+  .clicker{
+    position: relative!important;
+    right: initial!important;
+    i{
+      padding: 0 20px;
+      @media (max-width: 575px){
+        padding: 0 10px;
+      }
+    }
+    @media (max-width: 575px){
+      width: 48px!important;
+      border-right: initial!important;
+    }
+  }
+  .datepicker{
+    position: relative!important;
+    right: initial!important;
+    padding: 0 20px;
+    @media (max-width: 575px){
+      padding: 0 10px;
+      width: initial!important;
+      .date{
+        width: initial!important;
+      }
+      .form-control{
+        width: 38px!important;
+      }
+    }
+  }
+  .paperclip{
+    position: relative!important;
+    right: initial!important;
+    padding: 0 20px;
+    @media (max-width: 575px){
+      padding: 0 10px;
+    }
+  }
+  .sent{
+    margin-left: 60px;
+    @media (max-width: 767px){
+      margin-left: 0;
+    }
+  }
+}
+
+.video-block{
+  .image{
+    width: 200px;
+    height: 125px;
+    @include border-radius(3px);
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .desc{
+    margin-left: 20px;
+    width: calc(100% - 220px);
+    .video-block_input{
+      @include border-radius(3px);
+      padding-left: 15px;
+      border: 1px solid #E9E9E9;
+      height: 50px;
+      width: 100%;
+      @include font-style($primary-font,12px,$text);
+    }
+    .upload{
+      margin-top: 20px;
+      background-color: #EBEBEB;
+      @include font-style($mtavruli-bold,14px,$text);
+      padding: 14px 23px 11px;
+      @include border-radius(40px);
     }
   }
 }

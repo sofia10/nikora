@@ -53,7 +53,7 @@ function readURL(input) {
 }
 
 $('.new-answer').click(function(){
-    $('.answer-block').append('<div class="answer">\n' +
+    $('.add-poll-block').append('<div class="answer">\n' +
         '                                                    <input type="text" placeholder="პასუხი">\n' +
         '                                                </div>');
 });
