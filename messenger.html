@@ -173,15 +173,69 @@
             <div class="container">
                 <div class="messenger-block">
                     <div class="d-flex messenger-row">
-                        <div class="col-md-4">
+                        <div class="col-md-4 chat-users-box">
                             <div class="chat-users">
-                                <div class="title-chat d-flex align-items-center justify-content-between">
-                                    <h1 class="title">მიმოწერა</h1>
-                                    <button class="add-chat">
-                                        <i class="fas fa-plus-circle"></i>
-                                    </button>
+                                <div class="title-chat d-flex flex-column justify-content-center">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h1 class="title">მიმოწერა</h1>
+                                        <button class="add-chat">
+                                            <i class="fas fa-plus-circle"></i>
+                                        </button>
+                                    </div>
+                                    <div class="new-adress d-md-none d-flex align-items-center">
+                                        <span>ადრესატი :</span>
+                                        <input type="text" placeholder="ჩაწერეთ მომხმარებლის ან ჯგუფის სახელი">
+                                    </div>
                                 </div>
                                 <div class="list">
+                                    <div class="list-item d-flex align-items-center">
+                                        <div class="image">
+                                            <img src="uploads/images/user@2x.png" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="name">თინიკო კუტალაძე</div>
+                                                <span class="date">8 აგვისტო</span>
+                                            </div>
+                                            <p class="txt">როგორ ხარ? დახმარება მჭირდება შენი საქმეს დახმარება მჭირდება შენი საქმეს</p>
+                                        </div>
+                                    </div>
+                                    <div class="list-item d-flex align-items-center">
+                                        <div class="image">
+                                            <img src="uploads/images/user@2x.png" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="name">თინიკო კუტალაძე</div>
+                                                <span class="date">8 აგვისტო</span>
+                                            </div>
+                                            <p class="txt">როგორ ხარ? დახმარება მჭირდება შენი საქმეს დახმარება მჭირდება შენი საქმეს</p>
+                                        </div>
+                                    </div>
+                                    <div class="list-item active d-flex align-items-center">
+                                        <div class="image">
+                                            <img src="uploads/images/user1@2x.png" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="name">მარიამ ლორთქიფანიძე</div>
+                                                <span class="date">31 ოქტომბერი</span>
+                                            </div>
+                                            <p class="txt">საბეჭდი და ტიპოგრაფიული ინდუსტრიის საბეჭდი და ტიპოგრაფიული ინდუსტრიის</p>
+                                        </div>
+                                    </div>
+                                    <div class="list-item new d-flex align-items-center">
+                                        <div class="image">
+                                            <img src="uploads/images/user2@2x.png" alt="">
+                                        </div>
+                                        <div class="desc">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="name">მარიამ ლორთქიფანიძე</div>
+                                                <span class="date">31 ოქტომბერი</span>
+                                            </div>
+                                            <p class="txt">საბეჭდი და ტიპოგრაფიული ინდუსტრიის საბეჭდი და ტიპოგრაფიული ინდუსტრიის</p>
+                                        </div>
+                                    </div>
                                     <div class="list-item d-flex align-items-center">
                                         <div class="image">
                                             <img src="uploads/images/user@2x.png" alt="">
@@ -233,17 +287,163 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8 conversation-box">
                             <div class="conversation">
                                 <div class="conversation-block d-flex flex-column justify-content-between">
-                                    <div>
-                                        <div class="user-top d-flex align-items-center">
-                                            <div class="image">
-                                                <img src="uploads/images/user@2x.png" alt="">
-                                            </div>
-                                            <div class="name">მარიამ ლორთქიფანიძე</div>
+                                    <div class="new-adress_input align-items-center">
+                                        <div class="new-adress d-flex align-items-center">
+                                            <span>ადრესატი :</span>
+                                            <input type="text" placeholder="ჩაწერეთ მომხმარებლის ან ჯგუფის სახელი">
                                         </div>
-                                        <div class="chat-block">
+                                    </div>
+                                    <div>
+                                        <div class="user-top align-items-center">
+                                            <div class="back-to-list"></div>
+                                            <div class="conver-top d-flex align-items-center justify-content-between">
+                                                <div class="user-photo d-flex align-items-center">
+                                                    <div class="image">
+                                                        <img src="uploads/images/user@2x.png" alt="">
+                                                    </div>
+                                                    <div class="name">მარიამ ლორთქიფანიძე</div>
+                                                </div>
+                                                <div class="more-option dropdown">
+                                                    <button class="dots but d-flex btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="fas fa-cog"></i>
+                                                    </button>
+                                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                        <a class="dropdown-item address-btn" href="#">ადრესატის დამატება</a>
+                                                        <a class="dropdown-item" href="#">ჩატის წაშლა</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat-block" id="chat">
+                                            <div class="user">
+                                                <div class="d-flex">
+                                                    <div class="img">
+                                                        <img src="uploads/images/user2@2x.png" alt="">
+                                                    </div>
+                                                    <div class="txt">
+                                                        <span class="time">12:20 / 9 აგვისტო</span>
+                                                        <div class="answer d-flex flex-column align-items-start">
+                                                            <div class="sms-block">
+                                                                <p class="sms">გამარჯობა</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="me">
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="txt text-right">
+                                                        <span class="time">12:20 / 9 აგვისტო</span>
+                                                        <div class="answer d-flex flex-column align-items-end">
+                                                            <div class="sms-block">
+                                                                <p class="sms">გამარჯობა, მარიამ</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user">
+                                                <div class="d-flex">
+                                                    <div class="img">
+                                                        <img src="uploads/images/user2@2x.png" alt="">
+                                                    </div>
+                                                    <div class="txt">
+                                                        <span class="time">12:35</span>
+                                                        <div class="answer d-flex flex-column align-items-start">
+                                                            <div class="sms-block">
+                                                                <p class="sms">შენი დახმარება მჭირდება და შეგიძლია მოხვიდე და გამისწორო პროგრამა ?</p>
+                                                            </div>
+                                                            <div class="sms-block">
+                                                                <p class="sms">შენი დახმარება მჭირდება</p>
+                                                            </div>
+                                                            <div class="sms-block">
+                                                                <p class="sms">შენ</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="me">
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="txt text-right">
+                                                        <span class="time">12:40</span>
+                                                        <div class="answer d-flex flex-column align-items-end">
+                                                            <div class="sms-block">
+                                                                <p class="sms">კი კი, არ არის პრობლემა</p>
+                                                            </div>
+                                                            <div class="sms-block">
+                                                                <p class="sms">არის პრობლემა</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user">
+                                                <div class="d-flex">
+                                                    <div class="img">
+                                                        <img src="uploads/images/user2@2x.png" alt="">
+                                                    </div>
+                                                    <div class="txt">
+                                                        <span class="time">12:20 / 9 აგვისტო</span>
+                                                        <div class="answer d-flex flex-column align-items-start">
+                                                            <div class="sms-block">
+                                                                <p class="sms">გამარჯობა</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="me">
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="txt text-right">
+                                                        <span class="time">12:20 / 9 აგვისტო</span>
+                                                        <div class="answer d-flex flex-column align-items-end">
+                                                            <div class="sms-block">
+                                                                <p class="sms">გამარჯობა, მარიამ</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="user">
+                                                <div class="d-flex">
+                                                    <div class="img">
+                                                        <img src="uploads/images/user2@2x.png" alt="">
+                                                    </div>
+                                                    <div class="txt">
+                                                        <span class="time">12:35</span>
+                                                        <div class="answer d-flex flex-column align-items-start">
+                                                            <div class="sms-block">
+                                                                <p class="sms">შენი დახმარება მჭირდება და შეგიძლია მოხვიდე და გამისწორო პროგრამა ?</p>
+                                                            </div>
+                                                            <div class="sms-block">
+                                                                <p class="sms">შენი დახმარება მჭირდება</p>
+                                                            </div>
+                                                            <div class="sms-block">
+                                                                <p class="sms">შენ</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="me">
+                                                <div class="d-flex justify-content-end">
+                                                    <div class="txt text-right">
+                                                        <span class="time">12:40</span>
+                                                        <div class="answer d-flex flex-column align-items-end">
+                                                            <div class="sms-block">
+                                                                <p class="sms">კი კი, არ არის პრობლემა</p>
+                                                            </div>
+                                                            <div class="sms-block">
+                                                                <p class="sms">არის პრობლემა</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="user">
                                                 <div class="d-flex">
                                                     <div class="img">
@@ -345,6 +545,8 @@
     <script src="plugins/bootstrap-select/dist/js/bootstrap-select.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
 
+
+    <script src="minJs/messenger.min.js"></script>
 
     <!-- Begin emoji-picker JavaScript -->
     <script src="chat/js/config.js"></script>

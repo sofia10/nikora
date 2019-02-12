@@ -38,627 +38,934 @@
 
 </head>
 <body class="site">
-    <header class="site__header">
-        <div class="header">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="burger-bg"></div>
-                    <div class="col-md-3 col-2">
-                        <a href="#!" class="header-logo">
-                            <h1 class="main-h1">მთავარი</h1>
-                            <img src="images/logo@2x.png" alt="">
+<header class="site__header">
+    <div class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="burger-bg"></div>
+                <div class="col-md-3 col-2">
+                    <a href="#!" class="header-logo">
+                        <h1 class="main-h1">მთავარი</h1>
+                        <img src="images/logo@2x.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-6 col-6">
+                    <form action="">
+                        <input type="text" placeholder="საძიებო ტექსტი" class="header-search">
+                    </form>
+                </div>
+                <div class="col-md-3 col-4 d-flex align-items-center justify-content-end">
+                    <div class="my-ntfc d-flex">
+                        <a href="#!" class="my-ntfc_item my-ntfc_user">
+                            <img src="images/user-hdr@2x.png" alt="">
+                            <img src="images/user-hdr_active@2x.png" alt="" class="active">
+                        </a>
+                        <a href="#!" class="my-ntfc_item my-ntfc_msg active">
+                            <img src="images/msg-hdr@2x.png" alt="">
+                            <img src="images/msg-hdr_active@2x.png" alt="" class="active">
+                            <span class="msg-qty">3</span>
+                        </a>
+                        <a href="#!" class="my-ntfc_item my-ntfc_notif active">
+                            <img src="images/ntfc-hdr@2x.png" alt="">
+                            <img src="images/ntfc-hdr_active@2x.png" alt="" class="active">
+                            <span class="ntf-qty">3</span>
                         </a>
                     </div>
-                    <div class="col-md-6 col-6">
-                        <form action="">
-                            <input type="text" placeholder="საძიებო ტექსტი" class="header-search">
-                        </form>
+                    <div class="burger-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                    <div class="col-md-3 col-4 d-flex align-items-center justify-content-end">
-                        <div class="my-ntfc d-flex">
-                            <a href="#!" class="my-ntfc_item my-ntfc_user">
-                                <img src="images/user-hdr@2x.png" alt="">
-                                <img src="images/user-hdr_active@2x.png" alt="" class="active">
-                            </a>
-                            <a href="#!" class="my-ntfc_item my-ntfc_msg active">
-                                <img src="images/msg-hdr@2x.png" alt="">
-                                <img src="images/msg-hdr_active@2x.png" alt="" class="active">
-                                <span class="msg-qty">3</span>
-                            </a>
-                            <a href="#!" class="my-ntfc_item my-ntfc_notif">
-                                <img src="images/ntfc-hdr@2x.png" alt="">
-                                <img src="images/ntfc-hdr_active@2x.png" alt="" class="active">
-                            </a>
-                        </div>
-                        <div class="burger-btn">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="burger-nav">
-                            <img src="images/cancel@2x.png" alt="" class="close-btn">
-                            <div class="main-menu">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <img src="uploads/images/user@2x.png" class="main-menu_user" alt="">
-                                        <div class="user-name">ნიკოლოზ ედიშერაშვილი</div>
-                                    </div>
-                                    <div class="more-option dropdown">
-                                        <button class="dots d-flex btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <div class="dot"></div>
-                                            <div class="dot"></div>
-                                            <div class="dot"></div>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">ჩემი პროფილი</a>
-                                            <a class="dropdown-item" href="#">ფოტოს შეცვლა</a>
-                                            <a class="dropdown-item" href="#">პაროლის შეცვლა</a>
-                                        </div>
+                    <div class="burger-nav">
+                        <img src="images/cancel@2x.png" alt="" class="close-btn">
+                        <div class="main-menu">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="uploads/images/user@2x.png" class="main-menu_user" alt="">
+                                    <div class="user-name">ნიკოლოზ ედიშერაშვილი</div>
+                                </div>
+                                <div class="more-option dropdown">
+                                    <button class="dots d-flex btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">ჩემი პროფილი</a>
+                                        <a class="dropdown-item" href="#">ფოტოს შეცვლა</a>
+                                        <a class="dropdown-item" href="#">პაროლის შეცვლა</a>
                                     </div>
                                 </div>
-                                <div class="menu-list d-flex flex-column">
-                                    <a href="#!" class="menu-list_link active">
-                                        <img src="images/arrow@2x.png" alt="">
-                                        მთავარი გვერდი
-                                        <span class="notification">3</span>
-                                    </a>
-                                    <a href="polls.html" class="menu-list_link">
-                                        <img src="images/testing@2x.png" alt="">
-                                        გამოკითხვები</a>
-                                    <a href="#!" class="menu-list_link">
-                                        <img src="images/photo@2x.png" alt="">
-                                        ფოტოები</a>
-                                    <a href="#!" class="menu-list_link">
-                                        <img src="images/video@2x.png" alt="">
-                                        ვიდეოები</a>
-                                    <a href="events.html" class="menu-list_link">
-                                        <img src="images/event@2x.png" alt="">
-                                        ღონისძიებები
-                                        <span class="notification">99+</span>
-                                    </a>
-                                    <a href="events.html" class="menu-list_link">
-                                        <img src="images/cake-icon@2x.png" alt="">
-                                        დაბადების დღეები
-                                    </a>
-                                </div>
-                                <div class="menu-list groups d-flex flex-column">
-                                    <div class="d-flex">
-                                        <div class="groups-title">ჩემი ჯგუფები</div>
-                                    </div>
-                                    <div class="menu-list_block">
-                                        <a href="#!" class="menu-list_link">
-                                            <img src="images/user@2x.png" alt="">
-                                            ბუღალტერია
-                                        </a>
-                                        <a href="#!" class="menu-list_link">
-                                            <img src="images/user@2x.png" alt="">
-                                            ფინანსები
-                                        </a>
-                                        <a href="#!" class="menu-list_link">
-                                            <img src="images/user@2x.png" alt="">
-                                            ბათუმის ჯგუფი
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="menu-list groups d-flex flex-column">
-                                    <div class="d-flex">
-                                        <div class="groups-title">ყველა ჯგუფი</div>
-                                    </div>
-                                    <div class="menu-list_block">
-                                        <a href="#!" class="menu-list_link">
-                                            <img src="images/user@2x.png" alt="">
-                                            ბუღალტერია
-                                        </a>
-                                        <a href="#!" class="menu-list_link">
-                                            <img src="images/user@2x.png" alt="">
-                                            ფინანსები
-                                        </a>
-                                        <a href="#!" class="menu-list_link">
-                                            <img src="images/user@2x.png" alt="">
-                                            ბათუმის ჯგუფი
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="company">ორგანიზაცია</div>
                             </div>
+                            <div class="menu-list d-flex flex-column">
+                                <a href="#!" class="menu-list_link active">
+                                    <img src="images/arrow@2x.png" alt="">
+                                    მთავარი გვერდი
+                                    <span class="notification">3</span>
+                                </a>
+                                <a href="polls.html" class="menu-list_link">
+                                    <img src="images/testing@2x.png" alt="">
+                                    გამოკითხვები</a>
+                                <a href="#!" class="menu-list_link">
+                                    <img src="images/photo@2x.png" alt="">
+                                    ფოტოები</a>
+                                <a href="#!" class="menu-list_link">
+                                    <img src="images/video@2x.png" alt="">
+                                    ვიდეოები</a>
+                                <a href="events.html" class="menu-list_link">
+                                    <img src="images/event@2x.png" alt="">
+                                    ღონისძიებები
+                                    <span class="notification">99+</span>
+                                </a>
+                                <a href="events.html" class="menu-list_link">
+                                    <img src="images/cake-icon@2x.png" alt="">
+                                    დაბადების დღეები
+                                </a>
+                            </div>
+                            <div class="menu-list groups d-flex flex-column">
+                                <div class="d-flex">
+                                    <div class="groups-title">ჩემი ჯგუფები</div>
+                                </div>
+                                <div class="menu-list_block">
+                                    <a href="#!" class="menu-list_link">
+                                        <img src="images/user@2x.png" alt="">
+                                        ბუღალტერია
+                                    </a>
+                                    <a href="#!" class="menu-list_link">
+                                        <img src="images/user@2x.png" alt="">
+                                        ფინანსები
+                                    </a>
+                                    <a href="#!" class="menu-list_link">
+                                        <img src="images/user@2x.png" alt="">
+                                        ბათუმის ჯგუფი
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="menu-list groups d-flex flex-column">
+                                <div class="d-flex">
+                                    <div class="groups-title">ყველა ჯგუფი</div>
+                                </div>
+                                <div class="menu-list_block">
+                                    <a href="#!" class="menu-list_link">
+                                        <img src="images/user@2x.png" alt="">
+                                        ბუღალტერია
+                                    </a>
+                                    <a href="#!" class="menu-list_link">
+                                        <img src="images/user@2x.png" alt="">
+                                        ფინანსები
+                                    </a>
+                                    <a href="#!" class="menu-list_link">
+                                        <img src="images/user@2x.png" alt="">
+                                        ბათუმის ჯგუფი
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="company">ორგანიზაცია</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <main class="site__content">
-        <div class="content">
-            <div class="container">
-                <div class="home-page">
-                    <div class="row">
-                        <div class="col-xl-2 col-lg-3 col-md-4 d-none d-lg-block left-side-main">
-                            <div class="main-menu">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <img src="uploads/images/user@2x.png" class="main-menu_user" alt="">
-                                        <div class="user-name">ნიკოლოზ ედიშერაშვილი</div>
-                                    </div>
-                                    <div class="more-option dropdown">
-                                        <button class="dots d-flex btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <div class="dot"></div>
-                                            <div class="dot"></div>
-                                            <div class="dot"></div>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">ჩემი პროფილი</a>
-                                            <a class="dropdown-item" href="#">ფოტოს შეცვლა</a>
-                                            <a class="dropdown-item" href="#">პაროლის შეცვლა</a>
-                                        </div>
+<main class="site__content">
+    <div class="content">
+        <div class="container">
+            <div class="home-page">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-3 col-md-4 d-none d-lg-block left-side-main">
+                        <div class="main-menu">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="uploads/images/user@2x.png" class="main-menu_user" alt="">
+                                    <div class="user-name">ნიკოლოზ ედიშერაშვილი</div>
+                                </div>
+                                <div class="more-option dropdown">
+                                    <button class="dots d-flex btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                        <div class="dot"></div>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">ჩემი პროფილი</a>
+                                        <a class="dropdown-item" href="#">ფოტოს შეცვლა</a>
+                                        <a class="dropdown-item" href="#">პაროლის შეცვლა</a>
                                     </div>
                                 </div>
-                                <div class="menu-list d-flex flex-column">
-                                    <a href="#!" class="menu-list_link active">
-                                        <img src="images/arrow@2x.png" alt="">
-                                        მთავარი გვერდი
-                                        <span class="notification">3</span>
-                                    </a>
-                                    <a href="polls.html" class="menu-list_link">
-                                        <img src="images/testing@2x.png" alt="">
-                                        გამოკითხვები</a>
-                                    <a href="#!" class="menu-list_link">
-                                        <img src="images/photo@2x.png" alt="">
-                                        ფოტოები</a>
-                                    <a href="#!" class="menu-list_link">
-                                        <img src="images/video@2x.png" alt="">
-                                        ვიდეოები</a>
-                                    <a href="events.html" class="menu-list_link">
-                                        <img src="images/event@2x.png" alt="">
-                                        ღონისძიებები
-                                        <span class="notification">99+</span>
-                                    </a>
-                                </div>
-                                <div class="menu-list groups d-flex flex-column">
-                                    <div class="d-flex">
-                                        <div class="groups-title">ჩემი ჯგუფები</div>
-                                    </div>
-                                    <div class="menu-list_block">
-                                        <a href="#!" class="menu-list_link">
-                                            <img src="images/user@2x.png" alt="">
-                                            ბუღალტერია
-                                        </a>
-                                        <a href="#!" class="menu-list_link">
-                                            <img src="images/user@2x.png" alt="">
-                                            ფინანსები
-                                        </a>
-                                        <a href="#!" class="menu-list_link">
-                                            <img src="images/user@2x.png" alt="">
-                                            ბათუმის ჯგუფი
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="menu-list groups d-flex flex-column">
-                                    <div class="d-flex">
-                                        <div class="groups-title">ყველა ჯგუფი</div>
-                                    </div>
-                                    <div class="menu-list_block">
-                                        <a href="#!" class="menu-list_link">
-                                            <img src="images/user@2x.png" alt="">
-                                            ბუღალტერია
-                                        </a>
-                                        <a href="#!" class="menu-list_link">
-                                            <img src="images/user@2x.png" alt="">
-                                            ფინანსები
-                                        </a>
-                                        <a href="#!" class="menu-list_link">
-                                            <img src="images/user@2x.png" alt="">
-                                            ბათუმის ჯგუფი
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="company">ორგანიზაცია</div>
                             </div>
-                            <div class="d-block d-xl-none events">
-                                <div class="events-block">
-                                    <div class="event-block_top d-flex align-items-center justify-content-between">
-                                        <div class="title">უახლოესი ღონისძიებები</div>
-                                        <img src="images/event-icon@2x.png" alt="">
+                            <div class="menu-list d-flex flex-column">
+                                <a href="#!" class="menu-list_link active">
+                                    <img src="images/arrow@2x.png" alt="">
+                                    მთავარი გვერდი
+                                    <span class="notification">3</span>
+                                </a>
+                                <a href="polls.html" class="menu-list_link">
+                                    <img src="images/testing@2x.png" alt="">
+                                    გამოკითხვები</a>
+                                <a href="#!" class="menu-list_link">
+                                    <img src="images/photo@2x.png" alt="">
+                                    ფოტოები</a>
+                                <a href="#!" class="menu-list_link">
+                                    <img src="images/video@2x.png" alt="">
+                                    ვიდეოები</a>
+                                <a href="events.html" class="menu-list_link">
+                                    <img src="images/event@2x.png" alt="">
+                                    ღონისძიებები
+                                    <span class="notification">99+</span>
+                                </a>
+                            </div>
+                            <div class="menu-list groups d-flex flex-column">
+                                <div class="d-flex">
+                                    <div class="groups-title">ჩემი ჯგუფები</div>
+                                </div>
+                                <div class="menu-list_block">
+                                    <a href="#!" class="menu-list_link">
+                                        <img src="images/user@2x.png" alt="">
+                                        ბუღალტერია
+                                    </a>
+                                    <a href="#!" class="menu-list_link">
+                                        <img src="images/user@2x.png" alt="">
+                                        ფინანსები
+                                    </a>
+                                    <a href="#!" class="menu-list_link">
+                                        <img src="images/user@2x.png" alt="">
+                                        ბათუმის ჯგუფი
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="menu-list groups d-flex flex-column">
+                                <a href="#!" class="d-flex all-groups">
+                                    <div class="groups-title">ყველა ჯგუფი</div>
+                                </a>
+                                <div class="menu-list_block">
+                                    <a href="#!" class="menu-list_link">
+                                        <img src="images/user@2x.png" alt="">
+                                        ბუღალტერია
+                                    </a>
+                                    <a href="#!" class="menu-list_link">
+                                        <img src="images/user@2x.png" alt="">
+                                        ფინანსები
+                                    </a>
+                                    <a href="#!" class="menu-list_link">
+                                        <img src="images/user@2x.png" alt="">
+                                        ბათუმის ჯგუფი
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="company">ორგანიზაცია</div>
+                        </div>
+                        <div class="d-block d-xl-none events">
+                            <div class="events-block">
+                                <div class="event-block_top d-flex align-items-center justify-content-between">
+                                    <div class="title">უახლოესი ღონისძიებები</div>
+                                    <img src="images/event-icon@2x.png" alt="">
+                                </div>
+                                <div class="event-block_item">
+                                    <div class="img">
+                                        <img src="uploads/images/event1@2x.png" alt="">
                                     </div>
-                                    <div class="event-block_item">
-                                        <div class="img">
-                                            <img src="uploads/images/event1@2x.png" alt="">
+                                    <div class="row justify-content-between event-desc">
+                                        <div class="col-xl-7">
+                                            <div class="event-title">კორპორატიული საღამო</div>
+                                            <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
                                         </div>
-                                        <div class="row justify-content-between event-desc">
-                                            <div class="col-xl-7">
-                                                <div class="event-title">კორპორატიული საღამო</div>
-                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
-                                            </div>
-                                            <div class="col-xl-5 d-flex justify-content-end">
-                                                <button class="going">
-                                                    <span>მივდივარ</span>
-                                                </button>
-                                            </div>
+                                        <div class="col-xl-5 d-flex justify-content-end">
+                                            <button class="going">
+                                                <span>მივდივარ</span>
+                                            </button>
                                         </div>
-                                        <a href="#!" class="more">ვრცლად</a>
                                     </div>
-                                    <div class="event-block_item">
+                                    <a href="#!" class="more">ვრცლად</a>
+                                </div>
+                                <div class="event-block_item">
+                                    <div class="img">
+                                        <img src="uploads/images/event1@2x.png" alt="">
+                                    </div>
+                                    <div class="row justify-content-between event-desc">
+                                        <div class="col-xl-7">
+                                            <div class="event-title">საქველმოქმედო ღონისძიება
+                                                უსახლკარო ბავშვების
+                                                დასახმარებლად</div>
+                                            <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                        </div>
+                                        <div class="col-xl-5 d-flex justify-content-end">
+                                            <button class="going">
+                                                <span>მივდივარ</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <a href="#!" class="more">ვრცლად</a>
+                                </div>
+                            </div>
+                            <div class="events-block">
+                                <div class="event-block_top d-flex align-items-center justify-content-between">
+                                    <div class="title">დაბადების დღეები</div>
+                                    <img src="images/birth-icon@2x.png" alt="">
+                                </div>
+                                <div class="birthday-item">
+                                    <div class="d-flex">
                                         <div class="img">
-                                            <img src="uploads/images/event1@2x.png" alt="">
+                                            <img src="uploads/images/user1@2x.png" alt="">
+                                            <span class="age">23</span>
                                         </div>
-                                        <div class="row justify-content-between event-desc">
-                                            <div class="col-xl-7">
-                                                <div class="event-title">საქველმოქმედო ღონისძიება
-                                                    უსახლკარო ბავშვების
-                                                    დასახმარებლად</div>
-                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
-                                            </div>
-                                            <div class="col-xl-5 d-flex justify-content-end">
-                                                <button class="going">
-                                                    <span>მივდივარ</span>
-                                                </button>
+                                        <div class="birthday-desc">
+                                            <a href="#!" class="username">მარიამ ლორთქიფანიძე</a>
+                                            <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                            <div class="d-flex buttons-row">
+                                                <button class="congr">მილოცვა</button>
+                                                <a href="#!" class="sms">მიწერა</a>
                                             </div>
                                         </div>
-                                        <a href="#!" class="more">ვრცლად</a>
                                     </div>
                                 </div>
-                                <div class="events-block">
-                                    <div class="event-block_top d-flex align-items-center justify-content-between">
-                                        <div class="title">დაბადების დღეები</div>
-                                        <img src="images/birth-icon@2x.png" alt="">
-                                    </div>
-                                    <div class="birthday-item">
-                                        <div class="d-flex">
-                                            <div class="img">
-                                                <img src="uploads/images/user1@2x.png" alt="">
-                                                <span class="age">23</span>
-                                            </div>
-                                            <div class="birthday-desc">
-                                                <a href="#!" class="username">მარიამ ლორთქიფანიძე</a>
-                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
-                                                <div class="d-flex buttons-row">
-                                                    <button class="congr">მილოცვა</button>
-                                                    <a href="#!" class="sms">მიწერა</a>
-                                                </div>
+                                <div class="birthday-item">
+                                    <div class="d-flex">
+                                        <div class="img">
+                                            <img src="uploads/images/user1@2x.png" alt="">
+                                            <span class="age">3</span>
+                                        </div>
+                                        <div class="birthday-desc">
+                                            <a href="#!" class="username">თინიკო კუტალაძე</a>
+                                            <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                            <div class="d-flex buttons-row">
+                                                <button class="congr">მილოცვა</button>
+                                                <a href="#!" class="sms">მიწერა</a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="birthday-item">
-                                        <div class="d-flex">
-                                            <div class="img">
-                                                <img src="uploads/images/user1@2x.png" alt="">
-                                                <span class="age">3</span>
+                                </div>
+                                <div class="birthday-item">
+                                    <div class="d-flex">
+                                        <div class="img">
+                                            <img src="uploads/images/user1@2x.png" alt="">
+                                            <span class="age">23</span>
+                                        </div>
+                                        <div class="birthday-desc">
+                                            <a href="#!" class="username">მარიამ ლორთქიფანიძე</a>
+                                            <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                            <div class="d-flex buttons-row">
+                                                <button class="congr">მილოცვა</button>
+                                                <a href="#!" class="sms">მიწერა</a>
                                             </div>
-                                            <div class="birthday-desc">
-                                                <a href="#!" class="username">თინიკო კუტალაძე</a>
-                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
-                                                <div class="d-flex buttons-row">
-                                                    <button class="congr">მილოცვა</button>
-                                                    <a href="#!" class="sms">მიწერა</a>
-                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="birthday-item">
+                                    <div class="d-flex">
+                                        <div class="img">
+                                            <img src="uploads/images/user1@2x.png" alt="">
+                                            <span class="age">3</span>
+                                        </div>
+                                        <div class="birthday-desc">
+                                            <a href="#!" class="username">თინიკო კუტალაძე</a>
+                                            <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                            <div class="d-flex buttons-row">
+                                                <button class="congr">მილოცვა</button>
+                                                <a href="#!" class="sms">მიწერა</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="birthday-item">
+                                    <div class="d-flex">
+                                        <div class="img">
+                                            <img src="uploads/images/user1@2x.png" alt="">
+                                            <span class="age">23</span>
+                                        </div>
+                                        <div class="birthday-desc">
+                                            <a href="#!" class="username">მარიამ ლორთქიფანიძე</a>
+                                            <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                            <div class="d-flex buttons-row">
+                                                <button class="congr">მილოცვა</button>
+                                                <a href="#!" class="sms">მიწერა</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="birthday-item">
+                                    <div class="d-flex">
+                                        <div class="img">
+                                            <img src="uploads/images/user1@2x.png" alt="">
+                                            <span class="age">3</span>
+                                        </div>
+                                        <div class="birthday-desc">
+                                            <a href="#!" class="username">თინიკო კუტალაძე</a>
+                                            <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                            <div class="d-flex buttons-row">
+                                                <button class="congr">მილოცვა</button>
+                                                <a href="#!" class="sms">მიწერა</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="birthday-item">
+                                    <div class="d-flex">
+                                        <div class="img">
+                                            <img src="uploads/images/user1@2x.png" alt="">
+                                            <span class="age">23</span>
+                                        </div>
+                                        <div class="birthday-desc">
+                                            <a href="#!" class="username">მარიამ ლორთქიფანიძე</a>
+                                            <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                            <div class="d-flex buttons-row">
+                                                <button class="congr">მილოცვა</button>
+                                                <a href="#!" class="sms">მიწერა</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="birthday-item">
+                                    <div class="d-flex">
+                                        <div class="img">
+                                            <img src="uploads/images/user1@2x.png" alt="">
+                                            <span class="age">3</span>
+                                        </div>
+                                        <div class="birthday-desc">
+                                            <a href="#!" class="username">თინიკო კუტალაძე</a>
+                                            <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                            <div class="d-flex buttons-row">
+                                                <button class="congr">მილოცვა</button>
+                                                <a href="#!" class="sms">მიწერა</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-7 col-lg-9">
-                            <div class="news-feed">
-                                <div class="news-feed_item editor">
-                                    <div class="news-feed_item_top">
-                                        <ul class="nav nav-tabs editor-titles" id="myTab" role="tablist">
-                                            <li class="nav-item">
-                                                <a class="nav-link editor_title active" id="post-tab" data-toggle="tab" href="#post" role="tab" aria-controls="home" aria-selected="true">ახალი პოსტი</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link editor_title" id="photo-tab" data-toggle="tab" href="#photo" role="tab" aria-controls="profile" aria-selected="false">ფოტო</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link editor_title" id="video-tab" data-toggle="tab" href="#video" role="tab" aria-controls="contact" aria-selected="false">ვიდეო</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link editor_title" id="poll-tab" data-toggle="tab" href="#poll" role="tab" aria-controls="poll" aria-selected="false">გამოკითხვა</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link editor_title" id="event-tab" data-toggle="tab" href="#event" role="tab" aria-controls="event" aria-selected="false">ღონისძიება</a>
-                                            </li>
-                                        </ul>
+                    </div>
+                    <div class="col-xl-7 col-lg-9">
+                        <div class="news-feed">
+                            <div class="news-feed_item editor">
+                                <div class="news-feed_item_top">
+                                    <ul class="nav nav-tabs editor-titles" id="myTab" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link editor_title active" id="post-tab" data-toggle="tab" href="#post" role="tab" aria-controls="home" aria-selected="true">ახალი პოსტი</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link editor_title" id="photo-tab" data-toggle="tab" href="#photo" role="tab" aria-controls="profile" aria-selected="false">ფოტო</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link editor_title" id="video-tab" data-toggle="tab" href="#video" role="tab" aria-controls="contact" aria-selected="false">ვიდეო</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link editor_title" id="poll-tab" data-toggle="tab" href="#poll" role="tab" aria-controls="poll" aria-selected="false">გამოკითხვა</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link editor_title" id="event-tab" data-toggle="tab" href="#event" role="tab" aria-controls="event" aria-selected="false">ღონისძიება</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="news-feed_item_desc tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="post" role="tabpanel" aria-labelledby="post-tab">
+                                        <p class="lead emoji-picker-container new-txt">
+                                            <input type="email" class="form-control comment-txt" placeholder="ტექსტის ადგილი" data-emojiable="true">
+                                        </p>
                                     </div>
-                                    <div class="news-feed_item_desc tab-content" id="myTabContent">
-                                        <div class="tab-pane fade show active" id="post" role="tabpanel" aria-labelledby="post-tab">
-                                             <p class="lead emoji-picker-container new-txt">
-                                                <input type="email" class="form-control comment-txt" placeholder="ტექსტის ადგილი" data-emojiable="true">
-                                             </p>
-                                        </div>
-                                        <div class="tab-pane fade" id="photo" role="tabpanel" aria-labelledby="photo-tab">
-                                            <div class="d-flex photos-block">
-                                                <div class="photo-item">
-                                                    <div class="upload-img click">
-                                                        <img src="" class="added" alt="">
-                                                        <div class="bg"><img src="images/plus@2x.png" alt=""></div>
-                                                        <div class="delete-bg">
-                                                            <i class="fas fa-trash-alt"></i>
-                                                        </div>
+                                    <div class="tab-pane fade" id="photo" role="tabpanel" aria-labelledby="photo-tab">
+                                        <div class="d-flex photos-block">
+                                            <div class="photo-item">
+                                                <div class="upload-img click">
+                                                    <img src="" class="added" alt="">
+                                                    <div class="bg"><img src="images/plus@2x.png" alt=""></div>
+                                                    <div class="delete-bg">
+                                                        <i class="fas fa-trash-alt"></i>
                                                     </div>
-                                                    <input type="file" onchange="readURL(this);"  class="click-input">
                                                 </div>
-                                                <div class="photo-item">
-                                                    <div class="upload-img click">
-                                                        <img src="" class="added" alt="">
-                                                        <div class="bg"><img src="images/plus@2x.png" alt=""></div>
-                                                        <div class="delete-bg">
-                                                            <i class="fas fa-trash-alt"></i>
+                                                <input type="file" onchange="readURL(this);"  class="click-input">
+                                            </div>
+                                            <div class="photo-item">
+                                                <div class="upload-img click">
+                                                    <img src="" class="added" alt="">
+                                                    <div class="bg"><img src="images/plus@2x.png" alt=""></div>
+                                                    <div class="delete-bg">
+                                                        <i class="fas fa-trash-alt"></i>
+                                                    </div>
+                                                </div>
+                                                <input type="file" onchange="readURL(this);"  class="click-input">
+                                            </div>
+                                        </div>
+                                        <p class="lead emoji-picker-container new-txt">
+                                            <input type="email" class="form-control comment-txt" placeholder="ტექსტის ადგილი" data-emojiable="true">
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
+                                        <div class="video-block d-flex">
+                                            <div class="image">
+                                                <img src="uploads/images/bg-photo.png" alt="">
+                                            </div>
+                                            <div class="desc">
+                                                <input type="text" placeholder="ვიდეოს ლინკი" class="video-block_input">
+                                                <button class="upload">ატვირთვა</button>
+                                            </div>
+                                        </div>
+                                        <p class="lead emoji-picker-container new-txt">
+                                            <input type="email" class="form-control comment-txt" placeholder="ტექსტის ადგილი" data-emojiable="true">
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade" id="poll" role="tabpanel" aria-labelledby="poll-tab">
+                                        <div class="answer-block add-poll-block">
+                                            <div class="answer">
+                                                <input type="text" placeholder="პასუხი">
+                                                <i class="fas fa-times-circle delete"></i>
+                                            </div>
+                                            <div class="answer">
+                                                <input type="text" placeholder="პასუხი">
+                                                <i class="fas fa-plus-circle add"></i>
+                                            </div>
+                                        </div>
+                                        <button class="new-answer">პასუხის ველის დამატება</button>
+                                        <p class="lead emoji-picker-container new-txt">
+                                            <input type="email" class="form-control comment-txt" placeholder="გამოკითხვის ტექსტის ადგილი" data-emojiable="true">
+                                        </p>
+                                    </div>
+                                    <div class="tab-pane fade" id="event" role="tabpanel" aria-labelledby="event-tab">
+                                        <div class="answer-block">
+                                            <div class="answer">
+                                                <input type="text" placeholder="ჩატარების ადგილი">
+                                            </div>
+                                            <div class="answer">
+                                                <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+                                                    <input class="form-control disabled disable-remove" placeholder="ჩატარების თარიღი" type="text" readonly />
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                                </div>
+                                                <i class="fas fa-calendar-alt"></i>
+                                            </div>
+                                            <div class="answer">
+                                                <input type="time" id="time" class="disabled disable-remove">
+                                                <i class="fas fa-clock"></i>
+                                            </div>
+                                        </div>
+                                        <p class="lead emoji-picker-container new-txt">
+                                            <input type="email" class="form-control comment-txt" placeholder="ტექსტის ადგილი" data-emojiable="true">
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="add-comment">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="title-block d-flex">
+                                            <input type="text" placeholder="სათაურის ადგილი" class="title-input">
+                                            <button class="clicker">
+                                                <input type="file" class="attach">
+                                                <i class="fas fa-camera camera-icon"></i>
+                                            </button>
+                                            <button class="datepicker calendar">
+                                                <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
+                                                    <input class="form-control disabled disable-remove input-txt" id="date-val" type="text" readonly />
+                                                    <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                                </div>
+                                            </button>
+                                            <button class="paperclip">
+                                                <input type="file" class="file-upload">
+                                                <img src="images/paperclip@2x.png" class="paperclip-icon" alt="">
+                                            </button>
+                                            <input type="submit" value="გაგზავნა" class="sent">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-feed_item">
+                                <div class="bg-image">
+                                    <img src="uploads/images/bg-photo@2x.png" alt="">
+                                </div>
+                                <div class="news-feed_item_top d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="uploads/images/user@2x.png" alt="">
+                                        <div class="username">ნიკოლოზ ედიშერაშვილი</div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="d-flex align-items-center">
+                                            <i class="far fa-clock"></i>
+                                            <span class="date">8 აგვისტო , 2018</span>
+                                        </div>
+                                        <div class="more-option dropdown">
+                                            <button class="dots d-flex btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <div class="dot"></div>
+                                                <div class="dot"></div>
+                                                <div class="dot"></div>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item pinon" href="#">პოსტის აპინვა</a>
+                                                <a class="dropdown-item edit-btn" href="#">რედაქტირება</a>
+                                                <a class="dropdown-item" href="#">წაშლა</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="news-feed_item_desc">
+                                    <div class="descr">
+                                        <div class="news-feed_title">დღეს სამუშაო საათების შემდეგ სადმე ხომ არ წავიდეთ</div>
+                                        <p class="news-feed_txt">საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის მანძილზე შემორჩა, არამედ მან დღემდე, ელექტრონული ტიპოგრაფიის დრომდეც უცვლელად მოაღწია. განსაკუთრებული პოპულარობა მას 1960-იან წლებში გამოსულმა Letraset-ის ცნობილმა ტრაფარეტებმა მოუტანა, უფრო მოგვიანებით კი — Aldus PageMaker-ის ტიპის საგამომცემლო პროგრამებმა, რომლებშიც Lorem Ipsum-ის სხვადასხვა ვერსიები იყო ჩაშენებული.</p>
+                                    </div>
+                                    <div class="descr_edit">
+                                        <textarea data-autoresize class="title_edit"></textarea>
+                                        <p class="lead emoji-picker-container">
+                                            <input data-emojiable="true">
+                                        </p>
+                                        <button class="save save-text-edit">შენახვა</button>
+                                    </div>
+                                    <div class="news-feed_item_opt d-flex align-items-center justify-content-between">
+                                        <div class="d-flex">
+                                            <button class="like-btn like-post">
+                                                მომწონს
+                                            </button>
+                                            <span class="seen">ნანახია 342-ჯერ</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <button class="likes d-flex align-items-center" data-toggle="modal" data-target=".likes-modal">
+                                                <div class="likes-qty">34</div>
+                                                მოსწონს
+                                            </button>
+                                            <div class="modal fade likes-modal" tabindex="-1" aria-hidden="true" role="dialog" >
+                                                <div class="modal-dialog modal-sm">
+                                                    <div class="modal-content">
+                                                        <div class="likes-block">
+                                                            <div class="likes-block_title d-flex align-items-center justify-content-between">
+                                                                <div class="likes-modal d-flex align-items-center">
+                                                                    <span class="likes-qty-modal">34</span>
+                                                                    მოსწონს
+                                                                </div>
+                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="likes-list">
+                                                                <a href="#!" class="likes-list_item d-flex align-items-center">
+                                                                    <div class="img">
+                                                                        <img src="uploads/images/user1@2x.png" alt="">
+                                                                    </div>
+                                                                    <div class="username">მარიამ ლორთქიფანიძე</div>
+                                                                </a>
+                                                                <a href="#!" class="likes-list_item d-flex align-items-center">
+                                                                    <div class="img">
+                                                                        <img src="uploads/images/user2@2x.png" alt="">
+                                                                    </div>
+                                                                    <div class="username">ნუცა გვარამია</div>
+                                                                </a>
+                                                                <a href="#!" class="likes-list_item d-flex align-items-center">
+                                                                    <div class="img">
+                                                                        <img src="uploads/images/user@2x.png" alt="">
+                                                                    </div>
+                                                                    <div class="username">ლილე დათიკაშვილი</div>
+                                                                </a>
+                                                                <a href="#!" class="likes-list_item d-flex align-items-center">
+                                                                    <div class="img">
+                                                                        <img src="uploads/images/user1@2x.png" alt="">
+                                                                    </div>
+                                                                    <div class="username">მარიამ ლორთქიფანიძე</div>
+                                                                </a>
+                                                                <a href="#!" class="likes-list_item d-flex align-items-center">
+                                                                    <div class="img">
+                                                                        <img src="uploads/images/user2@2x.png" alt="">
+                                                                    </div>
+                                                                    <div class="username">ნუცა გვარამია</div>
+                                                                </a>
+                                                                <a href="#!" class="likes-list_item d-flex align-items-center">
+                                                                    <div class="img">
+                                                                        <img src="uploads/images/user@2x.png" alt="">
+                                                                    </div>
+                                                                    <div class="username">ლილე დათიკაშვილი</div>
+                                                                </a>
+                                                                <a href="#!" class="likes-list_item d-flex align-items-center">
+                                                                    <div class="img">
+                                                                        <img src="uploads/images/user1@2x.png" alt="">
+                                                                    </div>
+                                                                    <div class="username">მარიამ ლორთქიფანიძე</div>
+                                                                </a>
+                                                                <a href="#!" class="likes-list_item d-flex align-items-center">
+                                                                    <div class="img">
+                                                                        <img src="uploads/images/user@2x.png" alt="">
+                                                                    </div>
+                                                                    <div class="username">ლილე დათიკაშვილი</div>
+                                                                </a>
+                                                                <a href="#!" class="likes-list_item d-flex align-items-center">
+                                                                    <div class="img">
+                                                                        <img src="uploads/images/user1@2x.png" alt="">
+                                                                    </div>
+                                                                    <div class="username">მარიამ ლორთქიფანიძე</div>
+                                                                </a>
+                                                                <a href="#!" class="likes-list_item d-flex align-items-center">
+                                                                    <div class="img">
+                                                                        <img src="uploads/images/user2@2x.png" alt="">
+                                                                    </div>
+                                                                    <div class="username">ნუცა გვარამია</div>
+                                                                </a>
+                                                                <a href="#!" class="likes-list_item d-flex align-items-center">
+                                                                    <div class="img">
+                                                                        <img src="uploads/images/user@2x.png" alt="">
+                                                                    </div>
+                                                                    <div class="username">ლილე დათიკაშვილი</div>
+                                                                </a>
+                                                                <a href="#!" class="likes-list_item d-flex align-items-center">
+                                                                    <div class="img">
+                                                                        <img src="uploads/images/user1@2x.png" alt="">
+                                                                    </div>
+                                                                    <div class="username">მარიამ ლორთქიფანიძე</div>
+                                                                </a>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <input type="file" onchange="readURL(this);"  class="click-input">
                                                 </div>
                                             </div>
-                                            <p class="lead emoji-picker-container new-txt">
-                                                <input type="email" class="form-control comment-txt" placeholder="ტექსტის ადგილი" data-emojiable="true">
-                                            </p>
+                                            <button class="likes show-comments d-flex align-items-center">
+                                                <div class="comment-qty">120 კომენტარი</div>
+                                            </button>
                                         </div>
-                                        <div class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab">
-                                            <div class="video-block d-flex">
+                                    </div>
+                                </div>
+                                <div class="comments">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button class="show-prev">წინა კომენტარების ნახვა</button>
+                                        <span class="all-comments">3 კომენტარი  -  19დან</span>
+                                    </div>
+                                    <div class="comments-block">
+                                        <div class="prev-comments">
+                                            <div class="comments-block_item">
+                                                <div class="d-flex">
+                                                    <div class="image">
+                                                        <img src="uploads/images/user1@2x.png" alt="">
+                                                    </div>
+                                                    <div class="comment">
+                                                        <div class="username">სოფ მახარაშვილი</div>
+                                                        <div class="com-block d-flex align-content-center">
+                                                            <div class="comment-txt">
+                                                                <p class="text inp-text">აქ იქნება სავარაუდო პასუხი</p>
+                                                                <textarea class="text show-text"></textarea>
+                                                                <button class="comment-like d-flex align-items-center">
+                                                                    <div class="like-btn">
+                                                                        <img src="images/like@2x.png" alt="">
+                                                                    </div>
+                                                                    <span>120</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="com-option dropdown">
+                                                                <button class="dots d-flex btn btn-secondary dropdown-toggle" type="button" id="com-edit" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <div class="dot"></div>
+                                                                    <div class="dot"></div>
+                                                                    <div class="dot"></div>
+                                                                </button>
+                                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="com-edit">
+                                                                    <a class="dropdown-item edit-btn" href="#">რედაქტირება</a>
+                                                                    <a class="dropdown-item" href="#">წაშლა</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <button class="comment-opt like-btn">მომწონს</button>
+                                                            <button class="comment-opt reply">პასუხის გაცემა</button>
+                                                            <span class="date">12:20 / 9 აგვისტო</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comments-block_item">
+                                                <div class="d-flex">
+                                                    <div class="image">
+                                                        <img src="uploads/images/user2@2x.png" alt="">
+                                                    </div>
+                                                    <div class="comment">
+                                                        <div class="username">სოფ მახარაშვილი</div>
+                                                        <div class="comment-txt">
+                                                            <p class="text">აქ იქნება სავარაუდო პასუხი რომელიც მოწონებულია მომხმარებლის მიერ და მოცემული იქნება ამ ვიზუალით</p>
+                                                            <button class="comment-like d-flex align-items-center">
+                                                                <div class="like-btn">
+                                                                    <img src="images/like@2x.png" alt="">
+                                                                </div>
+                                                                <span>120</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <button class="comment-opt like-btn">მომწონს</button>
+                                                            <button class="comment-opt reply">პასუხის გაცემა</button>
+                                                            <span class="date">12:20 / 9 აგვისტო</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comments-block_item">
+                                                <div class="d-flex">
+                                                    <div class="image">
+                                                        <img src="uploads/images/user@2x.png" alt="">
+                                                    </div>
+                                                    <div class="comment">
+                                                        <div class="username">სოფ</div>
+                                                        <div class="comment-txt">
+                                                            <p class="text">აქ იქნება სავარაუდო პასუხი</p>
+                                                            <button class="comment-like d-flex align-items-center">
+                                                                <div class="like-btn">
+                                                                    <img src="images/like@2x.png" alt="">
+                                                                </div>
+                                                                <span>120</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <button class="comment-opt like-btn">მომწონს</button>
+                                                            <button class="comment-opt reply">პასუხის გაცემა</button>
+                                                            <span class="date">12:20 / 9 აგვისტო</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comments-block_item">
+                                            <div class="d-flex">
                                                 <div class="image">
-                                                    <img src="uploads/images/bg-photo.png" alt="">
+                                                    <img src="uploads/images/user1@2x.png" alt="">
                                                 </div>
-                                                <div class="desc">
-                                                    <input type="text" placeholder="ვიდეოს ლინკი" class="video-block_input">
-                                                    <button class="upload">ატვირთვა</button>
-                                                </div>
-                                            </div>
-                                            <p class="lead emoji-picker-container new-txt">
-                                                <input type="email" class="form-control comment-txt" placeholder="ტექსტის ადგილი" data-emojiable="true">
-                                            </p>
-                                        </div>
-                                        <div class="tab-pane fade" id="poll" role="tabpanel" aria-labelledby="poll-tab">
-                                            <div class="answer-block add-poll-block">
-                                                <div class="answer">
-                                                    <input type="text" placeholder="პასუხი">
-                                                </div>
-                                                <div class="answer">
-                                                    <input type="text" placeholder="პასუხი">
-                                                </div>
-                                            </div>
-                                            <button class="new-answer">პასუხის ველის დამატება</button>
-                                            <p class="lead emoji-picker-container new-txt">
-                                                <input type="email" class="form-control comment-txt" placeholder="გამოკითხვის ტექსტის ადგილი" data-emojiable="true">
-                                            </p>
-                                        </div>
-                                        <div class="tab-pane fade" id="event" role="tabpanel" aria-labelledby="event-tab">
-                                            <div class="answer-block">
-                                                <div class="answer">
-                                                    <input type="text" placeholder="ჩატარების ადგილი">
-                                                </div>
-                                                <div class="answer">
-                                                    <input type="text" placeholder="ჩატარების თარიღი" class="date-event">
-                                                </div>
-                                            </div>
-                                            <p class="lead emoji-picker-container new-txt">
-                                                <input type="email" class="form-control comment-txt" placeholder="ტექსტის ადგილი" data-emojiable="true">
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="add-comment">
-                                        <div class="d-flex justify-content-between">
-                                            <div class="title-block d-flex">
-                                                <input type="text" placeholder="სათაურის ადგილი" class="title-input">
-                                                <button class="clicker">
-                                                    <input type="file" class="attach">
-                                                    <i class="fas fa-camera camera-icon"></i>
-                                                </button>
-                                                <button class="datepicker calendar">
-                                                    <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
-                                                        <input class="form-control disabled disable-remove input-txt" id="date-val" type="text" readonly />
-                                                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                                <div class="comment">
+                                                    <div class="username">სოფ მახარაშვილი</div>
+                                                    <div class="comment-txt">
+                                                        <p class="text">ესაა ჩემი კომენტარი</p>
                                                     </div>
-                                                </button>
-                                                <button class="paperclip">
-                                                    <input type="file" class="file-upload">
-                                                    <img src="images/paperclip@2x.png" class="paperclip-icon" alt="">
-                                                </button>
-                                                <input type="submit" value="გაგზავნა" class="sent">
+                                                    <div class="d-flex">
+                                                        <button class="comment-opt like-btn">მომწონს</button>
+                                                        <button class="comment-opt reply">პასუხის გაცემა</button>
+                                                        <span class="date">12:20 / 9 აგვისტო</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comments-block_item">
+                                            <div class="d-flex">
+                                                <div class="image">
+                                                    <img src="uploads/images/user2@2x.png" alt="">
+                                                </div>
+                                                <div class="comment">
+                                                    <div class="username">სოფ მახარაშვილი</div>
+                                                    <div class="comment-txt">
+                                                        <p class="text">აქ იქნება სავარაუდო პასუხი რომელიც მოწონებულია მომხმარებლის მიერ და მოცემული იქნება ამ ვიზუალით</p>
+                                                        <button class="comment-like d-flex align-items-center">
+                                                            <div class="like-btn">
+                                                                <img src="images/like@2x.png" alt="">
+                                                            </div>
+                                                            <span>120</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <button class="comment-opt like-btn">მომწონს</button>
+                                                        <button class="comment-opt reply">პასუხის გაცემა</button>
+                                                        <span class="date">12:20 / 9 აგვისტო</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comments-block_item">
+                                            <div class="d-flex">
+                                                <div class="image">
+                                                    <img src="uploads/images/user@2x.png" alt="">
+                                                </div>
+                                                <div class="comment">
+                                                    <div class="username">სოფ</div>
+                                                    <div class="com-block d-flex align-content-center">
+                                                        <div class="comment-txt">
+                                                            <p class="text inp-text">აქ იქნება სავარაუდო პასუხი</p>
+                                                            <textarea class="text show-text"></textarea>
+                                                            <button class="comment-like d-flex align-items-center">
+                                                                <div class="like-btn">
+                                                                    <img src="images/like@2x.png" alt="">
+                                                                </div>
+                                                                <span>120</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="com-option dropdown">
+                                                            <button class="dots d-flex btn btn-secondary dropdown-toggle" type="button" id="com-edit" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <div class="dot"></div>
+                                                                <div class="dot"></div>
+                                                                <div class="dot"></div>
+                                                            </button>
+                                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="com-edit">
+                                                                <a class="dropdown-item edit-btn" href="#">რედაქტირება</a>
+                                                                <a class="dropdown-item" href="#">წაშლა</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <button class="comment-opt like-btn">მომწონს</button>
+                                                        <button class="comment-opt reply">პასუხის გაცემა</button>
+                                                        <span class="date">12:20 / 9 აგვისტო</span>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="news-feed_item">
-                                    <div class="bg-image">
-                                        <img src="uploads/images/bg-photo@2x.png" alt="">
+                                <div class="add-comment">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="lead emoji-picker-container">
+                                            <input type="email" class="form-control comment-txt" placeholder="კომენტარის დამატება" data-emojiable="true">
+                                            <input type="file" class="attach">
+                                            <button class="clicker">
+                                                <i class="fas fa-camera"></i>
+                                            </button>
+                                        </p>
+                                        <input type="submit" value="გაგზავნა" class="sent">
                                     </div>
-                                    <div class="news-feed_item_top d-flex justify-content-between align-items-center">
-                                        <div class="d-flex align-items-center">
-                                            <img src="uploads/images/user@2x.png" alt="">
-                                            <div class="username">ნიკოლოზ ედიშერაშვილი</div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="news-feed_item">
+                                <div class="news-feed_item_top d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="uploads/images/user@2x.png" alt="">
+                                        <div class="username">ნიკოლოზ ედიშერაშვილი</div>
+                                    </div>
+                                    <div class="d-flex">
                                         <div class="d-flex align-items-center">
                                             <i class="far fa-clock"></i>
                                             <span class="date">8 აგვისტო , 2018</span>
                                         </div>
-                                    </div>
-                                    <div class="news-feed_item_desc">
-                                        <div class="news-feed_title">
-                                            დღეს სამუშაო საათების შემდეგ სადმე ხომ არ წავიდეთ ?
-                                        </div>
-                                        <p class="news-feed_txt">საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის მანძილზე შემორჩა, არამედ მან დღემდე, ელექტრონული ტიპოგრაფიის დრომდეც უცვლელად მოაღწია. განსაკუთრებული პოპულარობა მას 1960-იან წლებში გამოსულმა Letraset-ის ცნობილმა ტრაფარეტებმა მოუტანა, უფრო მოგვიანებით კი — Aldus PageMaker-ის ტიპის საგამომცემლო პროგრამებმა, რომლებშიც Lorem Ipsum-ის სხვადასხვა ვერსიები იყო ჩაშენებული.</p>
-                                        <div class="news-feed_item_opt d-flex align-items-center justify-content-between">
-                                            <div class="d-flex">
-                                                <button class="like-btn like-post">
-                                                    მომწონს
-                                                </button>
-                                                <span class="seen">ნანახია 342-ჯერ</span>
-                                            </div>
-                                            <div class="d-flex">
-                                                <button class="likes d-flex align-items-center" data-toggle="modal" data-target=".likes-modal">
-                                                    <div class="likes-qty">34</div>
-                                                    მოსწონს
-                                                </button>
-                                                <div class="modal fade likes-modal" tabindex="-1" aria-hidden="true" role="dialog" >
-                                                    <div class="modal-dialog modal-sm">
-                                                        <div class="modal-content">
-                                                            <div class="likes-block">
-                                                                <div class="likes-block_title d-flex align-items-center justify-content-between">
-                                                                    <div class="likes-modal d-flex align-items-center">
-                                                                        <span class="likes-qty-modal">34</span>
-                                                                        მოსწონს
-                                                                    </div>
-                                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                                        <span aria-hidden="true">&times;</span>
-                                                                    </button>
-                                                                </div>
-                                                                <div class="likes-list">
-                                                                    <a href="#!" class="likes-list_item d-flex align-items-center">
-                                                                        <div class="img">
-                                                                            <img src="uploads/images/user1@2x.png" alt="">
-                                                                        </div>
-                                                                        <div class="username">მარიამ ლორთქიფანიძე</div>
-                                                                    </a>
-                                                                    <a href="#!" class="likes-list_item d-flex align-items-center">
-                                                                        <div class="img">
-                                                                            <img src="uploads/images/user2@2x.png" alt="">
-                                                                        </div>
-                                                                        <div class="username">ნუცა გვარამია</div>
-                                                                    </a>
-                                                                    <a href="#!" class="likes-list_item d-flex align-items-center">
-                                                                        <div class="img">
-                                                                            <img src="uploads/images/user@2x.png" alt="">
-                                                                        </div>
-                                                                        <div class="username">ლილე დათიკაშვილი</div>
-                                                                    </a>
-                                                                    <a href="#!" class="likes-list_item d-flex align-items-center">
-                                                                        <div class="img">
-                                                                            <img src="uploads/images/user1@2x.png" alt="">
-                                                                        </div>
-                                                                        <div class="username">მარიამ ლორთქიფანიძე</div>
-                                                                    </a>
-                                                                    <a href="#!" class="likes-list_item d-flex align-items-center">
-                                                                        <div class="img">
-                                                                            <img src="uploads/images/user2@2x.png" alt="">
-                                                                        </div>
-                                                                        <div class="username">ნუცა გვარამია</div>
-                                                                    </a>
-                                                                    <a href="#!" class="likes-list_item d-flex align-items-center">
-                                                                        <div class="img">
-                                                                            <img src="uploads/images/user@2x.png" alt="">
-                                                                        </div>
-                                                                        <div class="username">ლილე დათიკაშვილი</div>
-                                                                    </a>
-                                                                    <a href="#!" class="likes-list_item d-flex align-items-center">
-                                                                        <div class="img">
-                                                                            <img src="uploads/images/user1@2x.png" alt="">
-                                                                        </div>
-                                                                        <div class="username">მარიამ ლორთქიფანიძე</div>
-                                                                    </a>
-                                                                    <a href="#!" class="likes-list_item d-flex align-items-center">
-                                                                        <div class="img">
-                                                                            <img src="uploads/images/user@2x.png" alt="">
-                                                                        </div>
-                                                                        <div class="username">ლილე დათიკაშვილი</div>
-                                                                    </a>
-                                                                    <a href="#!" class="likes-list_item d-flex align-items-center">
-                                                                        <div class="img">
-                                                                            <img src="uploads/images/user1@2x.png" alt="">
-                                                                        </div>
-                                                                        <div class="username">მარიამ ლორთქიფანიძე</div>
-                                                                    </a>
-                                                                    <a href="#!" class="likes-list_item d-flex align-items-center">
-                                                                        <div class="img">
-                                                                            <img src="uploads/images/user2@2x.png" alt="">
-                                                                        </div>
-                                                                        <div class="username">ნუცა გვარამია</div>
-                                                                    </a>
-                                                                    <a href="#!" class="likes-list_item d-flex align-items-center">
-                                                                        <div class="img">
-                                                                            <img src="uploads/images/user@2x.png" alt="">
-                                                                        </div>
-                                                                        <div class="username">ლილე დათიკაშვილი</div>
-                                                                    </a>
-                                                                    <a href="#!" class="likes-list_item d-flex align-items-center">
-                                                                        <div class="img">
-                                                                            <img src="uploads/images/user1@2x.png" alt="">
-                                                                        </div>
-                                                                        <div class="username">მარიამ ლორთქიფანიძე</div>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <button class="likes show-comments d-flex align-items-center">
-                                                    <div class="comment-qty">120 კომენტარი</div>
-                                                </button>
+                                        <div class="more-option dropdown">
+                                            <button class="dots d-flex btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <div class="dot"></div>
+                                                <div class="dot"></div>
+                                                <div class="dot"></div>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item pinon" href="#">პოსტის აპინვა</a>
+                                                <a class="dropdown-item pinoff" href="#">პინის მოხსნა</a>
+                                                <a class="dropdown-item edit-btn" href="#">რედაქტირება</a>
+                                                <a class="dropdown-item" href="#">წაშლა</a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="comments">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <button class="show-prev">წინა კომენტარების ნახვა</button>
-                                            <span class="all-comments">3 კომენტარი  -  19დან</span>
+                                </div>
+                                <div class="news-feed_item_desc">
+                                    <div class="descr">
+                                        <div class="news-feed_title">დღეს სამუშაო საათების შემდეგ სადმე ხომ არ წავიდეთ ?</div>
+                                        <p class="news-feed_txt">საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის მანძილზე შემორჩა, არამედ მან დღემდე, ელექტრონული ტიპოგრაფიის დრომდეც უცვლელად მოაღწია. განსაკუთრებული პოპულარობა მას 1960-იან წლებში გამოსულმა Letraset-ის ცნობილმა ტრაფარეტებმა მოუტანა, უფრო მოგვიანებით კი — Aldus PageMaker-ის ტიპის საგამომცემლო პროგრამებმა, რომლებშიც Lorem Ipsum-ის სხვადასხვა ვერსიები იყო ჩაშენებული.222</p>
+                                    </div>
+                                    <div class="descr_edit">
+                                        <textarea data-autoresize class="title_edit"></textarea>
+                                        <p class="lead emoji-picker-container">
+                                            <input data-emojiable="true">
+                                        </p>
+                                        <button class="save save-text-edit">შენახვა</button>
+                                    </div>
+                                    <div class="news-feed_item_opt d-flex align-items-center justify-content-between">
+                                        <div class="d-flex">
+                                            <button class="like-btn like-post">
+                                                მომწონს
+                                            </button>
+                                            <span class="seen">ნანახია 342-ჯერ</span>
                                         </div>
-                                        <div class="comments-block">
-                                            <div class="prev-comments">
-                                                <div class="comments-block_item">
-                                                    <div class="d-flex">
-                                                        <div class="image">
-                                                            <img src="uploads/images/user1@2x.png" alt="">
-                                                        </div>
-                                                        <div class="comment">
-                                                            <div class="username">სოფ მახარაშვილი</div>
-                                                            <div class="comment-txt">
-                                                                <p class="text">ესაა ჩემი კომენტარი</p>
-                                                            </div>
-                                                            <div class="d-flex">
-                                                                <button class="comment-opt like-btn">მომწონს</button>
-                                                                <button class="comment-opt reply">პასუხის გაცემა</button>
-                                                                <span class="date">12:20 / 9 აგვისტო</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="comments-block_item">
-                                                    <div class="d-flex">
-                                                        <div class="image">
-                                                            <img src="uploads/images/user2@2x.png" alt="">
-                                                        </div>
-                                                        <div class="comment">
-                                                            <div class="username">სოფ მახარაშვილი</div>
-                                                            <div class="comment-txt">
-                                                                <p class="text">აქ იქნება სავარაუდო პასუხი რომელიც მოწონებულია მომხმარებლის მიერ და მოცემული იქნება ამ ვიზუალით</p>
-                                                                <button class="comment-like d-flex align-items-center">
-                                                                    <div class="like-btn">
-                                                                        <img src="images/like@2x.png" alt="">
-                                                                    </div>
-                                                                    <span>120</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="d-flex">
-                                                                <button class="comment-opt like-btn">მომწონს</button>
-                                                                <button class="comment-opt reply">პასუხის გაცემა</button>
-                                                                <span class="date">12:20 / 9 აგვისტო</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="comments-block_item">
-                                                    <div class="d-flex">
-                                                        <div class="image">
-                                                            <img src="uploads/images/user@2x.png" alt="">
-                                                        </div>
-                                                        <div class="comment">
-                                                            <div class="username">სოფ</div>
-                                                            <div class="comment-txt">
-                                                                <p class="text">აქ იქნება სავარაუდო პასუხი</p>
-                                                                <button class="comment-like d-flex align-items-center">
-                                                                    <div class="like-btn">
-                                                                        <img src="images/like@2x.png" alt="">
-                                                                    </div>
-                                                                    <span>120</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="d-flex">
-                                                                <button class="comment-opt like-btn">მომწონს</button>
-                                                                <button class="comment-opt reply">პასუხის გაცემა</button>
-                                                                <span class="date">12:20 / 9 აგვისტო</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="d-flex">
+                                            <button class="likes d-flex align-items-center">
+                                                <div class="likes-qty">34</div>
+                                                მოსწონს
+                                            </button>
+                                            <button class="likes show-comments d-flex align-items-center">
+                                                <div class="comment-qty">120 კომენტარი</div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comments">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <button class="show-prev">წინა კომენტარების ნახვა</button>
+                                        <span class="all-comments">3 კომენტარი  -  19დან</span>
+                                    </div>
+                                    <div class="comments-block">
+                                        <div class="prev-comments">
                                             <div class="comments-block_item">
                                                 <div class="d-flex">
                                                     <div class="image">
@@ -726,221 +1033,115 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="add-comment">
-                                        <div class="d-flex justify-content-between">
-                                            <p class="lead emoji-picker-container">
-                                                <input type="email" class="form-control comment-txt" placeholder="კომენტარის დამატება" data-emojiable="true">
-                                                <input type="file" class="attach">
-                                                <button class="clicker">
-                                                    <i class="fas fa-camera"></i>
-                                                </button>
-                                            </p>
-                                            <input type="submit" value="გაგზავნა" class="sent">
+                                        <div class="comments-block_item">
+                                            <div class="d-flex">
+                                                <div class="image">
+                                                    <img src="uploads/images/user1@2x.png" alt="">
+                                                </div>
+                                                <div class="comment">
+                                                    <div class="username">სოფ მახარაშვილი</div>
+                                                    <div class="comment-txt">
+                                                        <p class="text">ესაა ჩემი კომენტარი</p>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <button class="comment-opt like-btn">მომწონს</button>
+                                                        <button class="comment-opt reply">პასუხის გაცემა</button>
+                                                        <span class="date">12:20 / 9 აგვისტო</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comments-block_item">
+                                            <div class="d-flex">
+                                                <div class="image">
+                                                    <img src="uploads/images/user2@2x.png" alt="">
+                                                </div>
+                                                <div class="comment">
+                                                    <div class="username">სოფ მახარაშვილი</div>
+                                                    <div class="comment-txt">
+                                                        <p class="text">აქ იქნება სავარაუდო პასუხი რომელიც მოწონებულია მომხმარებლის მიერ და მოცემული იქნება ამ ვიზუალით</p>
+                                                        <button class="comment-like d-flex align-items-center">
+                                                            <div class="like-btn">
+                                                                <img src="images/like@2x.png" alt="">
+                                                            </div>
+                                                            <span>120</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <button class="comment-opt like-btn">მომწონს</button>
+                                                        <button class="comment-opt reply">პასუხის გაცემა</button>
+                                                        <span class="date">12:20 / 9 აგვისტო</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comments-block_item">
+                                            <div class="d-flex">
+                                                <div class="image">
+                                                    <img src="uploads/images/user@2x.png" alt="">
+                                                </div>
+                                                <div class="comment">
+                                                    <div class="username">სოფ</div>
+                                                    <div class="comment-txt">
+                                                        <p class="text">აქ იქნება სავარაუდო პასუხი</p>
+                                                        <button class="comment-like d-flex align-items-center">
+                                                            <div class="like-btn">
+                                                                <img src="images/like@2x.png" alt="">
+                                                            </div>
+                                                            <span>120</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <button class="comment-opt like-btn">მომწონს</button>
+                                                        <button class="comment-opt reply">პასუხის გაცემა</button>
+                                                        <span class="date">12:20 / 9 აგვისტო</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="news-feed_item">
-                                    <div class="news-feed_item_top d-flex justify-content-between align-items-center">
-                                        <div class="d-flex align-items-center">
-                                            <img src="uploads/images/user@2x.png" alt="">
-                                            <div class="username">ნიკოლოზ ედიშერაშვილი</div>
-                                        </div>
+                                <div class="add-comment">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="lead emoji-picker-container">
+                                            <input type="email" class="form-control comment-txt" placeholder="კომენტარის დამატება" data-emojiable="true">
+                                            <input type="file" class="attach">
+                                            <button class="clicker">
+                                                <i class="fas fa-camera"></i>
+                                            </button>
+                                        </p>
+                                        <input type="submit" value="გაგზავნა" class="sent">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-feed_item">
+                                <div class="news-feed_item_top d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <img src="uploads/images/user@2x.png" alt="">
+                                        <div class="username">ნიკოლოზ ედიშერაშვილი</div>
+                                    </div>
+                                    <div class="d-flex">
                                         <div class="d-flex align-items-center">
                                             <i class="far fa-clock"></i>
                                             <span class="date">8 აგვისტო , 2018</span>
                                         </div>
-                                    </div>
-                                    <div class="news-feed_item_desc">
-                                        <div class="news-feed_title">
-                                            დღეს სამუშაო საათების შემდეგ სადმე ხომ არ წავიდეთ ?
-                                        </div>
-                                        <p class="news-feed_txt">საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც უცნობმა მბეჭდავმა ამწყობ დაზგაზე წიგნის საცდელი ეგზემპლარი დაბეჭდა. მისი ტექსტი არამარტო 5 საუკუნის მანძილზე შემორჩა, არამედ მან დღემდე, ელექტრონული ტიპოგრაფიის დრომდეც უცვლელად მოაღწია. განსაკუთრებული პოპულარობა მას 1960-იან წლებში გამოსულმა Letraset-ის ცნობილმა ტრაფარეტებმა მოუტანა, უფრო მოგვიანებით კი — Aldus PageMaker-ის ტიპის საგამომცემლო პროგრამებმა, რომლებშიც Lorem Ipsum-ის სხვადასხვა ვერსიები იყო ჩაშენებული.</p>
-                                        <div class="news-feed_item_opt d-flex align-items-center justify-content-between">
-                                            <div class="d-flex">
-                                                <button class="like-btn like-post">
-                                                    მომწონს
-                                                </button>
-                                                <span class="seen">ნანახია 342-ჯერ</span>
+                                        <div class="more-option dropdown">
+                                            <button class="dots d-flex btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <div class="dot"></div>
+                                                <div class="dot"></div>
+                                                <div class="dot"></div>
+                                            </button>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item pinon" href="#">პოსტის აპინვა</a>
+                                                <a class="dropdown-item pinoff" href="#">პინის მოხსნა</a>
+                                                <a class="dropdown-item edit-btn" href="#">რედაქტირება</a>
+                                                <a class="dropdown-item" href="#">წაშლა</a>
                                             </div>
-                                            <div class="d-flex">
-                                                <button class="likes d-flex align-items-center">
-                                                    <div class="likes-qty">34</div>
-                                                    მოსწონს
-                                                </button>
-                                                <button class="likes show-comments d-flex align-items-center">
-                                                    <div class="comment-qty">120 კომენტარი</div>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comments">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <button class="show-prev">წინა კომენტარების ნახვა</button>
-                                            <span class="all-comments">3 კომენტარი  -  19დან</span>
-                                        </div>
-                                        <div class="comments-block">
-                                            <div class="prev-comments">
-                                                <div class="comments-block_item">
-                                                    <div class="d-flex">
-                                                        <div class="image">
-                                                            <img src="uploads/images/user1@2x.png" alt="">
-                                                        </div>
-                                                        <div class="comment">
-                                                            <div class="username">სოფ მახარაშვილი</div>
-                                                            <div class="comment-txt">
-                                                                <p class="text">ესაა ჩემი კომენტარი</p>
-                                                            </div>
-                                                            <div class="d-flex">
-                                                                <button class="comment-opt like-btn">მომწონს</button>
-                                                                <button class="comment-opt reply">პასუხის გაცემა</button>
-                                                                <span class="date">12:20 / 9 აგვისტო</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="comments-block_item">
-                                                    <div class="d-flex">
-                                                        <div class="image">
-                                                            <img src="uploads/images/user2@2x.png" alt="">
-                                                        </div>
-                                                        <div class="comment">
-                                                            <div class="username">სოფ მახარაშვილი</div>
-                                                            <div class="comment-txt">
-                                                                <p class="text">აქ იქნება სავარაუდო პასუხი რომელიც მოწონებულია მომხმარებლის მიერ და მოცემული იქნება ამ ვიზუალით</p>
-                                                                <button class="comment-like d-flex align-items-center">
-                                                                    <div class="like-btn">
-                                                                        <img src="images/like@2x.png" alt="">
-                                                                    </div>
-                                                                    <span>120</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="d-flex">
-                                                                <button class="comment-opt like-btn">მომწონს</button>
-                                                                <button class="comment-opt reply">პასუხის გაცემა</button>
-                                                                <span class="date">12:20 / 9 აგვისტო</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="comments-block_item">
-                                                    <div class="d-flex">
-                                                        <div class="image">
-                                                            <img src="uploads/images/user@2x.png" alt="">
-                                                        </div>
-                                                        <div class="comment">
-                                                            <div class="username">სოფ</div>
-                                                            <div class="comment-txt">
-                                                                <p class="text">აქ იქნება სავარაუდო პასუხი</p>
-                                                                <button class="comment-like d-flex align-items-center">
-                                                                    <div class="like-btn">
-                                                                        <img src="images/like@2x.png" alt="">
-                                                                    </div>
-                                                                    <span>120</span>
-                                                                </button>
-                                                            </div>
-                                                            <div class="d-flex">
-                                                                <button class="comment-opt like-btn">მომწონს</button>
-                                                                <button class="comment-opt reply">პასუხის გაცემა</button>
-                                                                <span class="date">12:20 / 9 აგვისტო</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="comments-block_item">
-                                                <div class="d-flex">
-                                                    <div class="image">
-                                                        <img src="uploads/images/user1@2x.png" alt="">
-                                                    </div>
-                                                    <div class="comment">
-                                                        <div class="username">სოფ მახარაშვილი</div>
-                                                        <div class="comment-txt">
-                                                            <p class="text">ესაა ჩემი კომენტარი</p>
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            <button class="comment-opt like-btn">მომწონს</button>
-                                                            <button class="comment-opt reply">პასუხის გაცემა</button>
-                                                            <span class="date">12:20 / 9 აგვისტო</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="comments-block_item">
-                                                <div class="d-flex">
-                                                    <div class="image">
-                                                        <img src="uploads/images/user2@2x.png" alt="">
-                                                    </div>
-                                                    <div class="comment">
-                                                        <div class="username">სოფ მახარაშვილი</div>
-                                                        <div class="comment-txt">
-                                                            <p class="text">აქ იქნება სავარაუდო პასუხი რომელიც მოწონებულია მომხმარებლის მიერ და მოცემული იქნება ამ ვიზუალით</p>
-                                                            <button class="comment-like d-flex align-items-center">
-                                                                <div class="like-btn">
-                                                                    <img src="images/like@2x.png" alt="">
-                                                                </div>
-                                                                <span>120</span>
-                                                            </button>
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            <button class="comment-opt like-btn">მომწონს</button>
-                                                            <button class="comment-opt reply">პასუხის გაცემა</button>
-                                                            <span class="date">12:20 / 9 აგვისტო</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="comments-block_item">
-                                                <div class="d-flex">
-                                                    <div class="image">
-                                                        <img src="uploads/images/user@2x.png" alt="">
-                                                    </div>
-                                                    <div class="comment">
-                                                        <div class="username">სოფ</div>
-                                                        <div class="comment-txt">
-                                                            <p class="text">აქ იქნება სავარაუდო პასუხი</p>
-                                                            <button class="comment-like d-flex align-items-center">
-                                                                <div class="like-btn">
-                                                                    <img src="images/like@2x.png" alt="">
-                                                                </div>
-                                                                <span>120</span>
-                                                            </button>
-                                                        </div>
-                                                        <div class="d-flex">
-                                                            <button class="comment-opt like-btn">მომწონს</button>
-                                                            <button class="comment-opt reply">პასუხის გაცემა</button>
-                                                            <span class="date">12:20 / 9 აგვისტო</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="add-comment">
-                                        <div class="d-flex justify-content-between">
-                                            <p class="lead emoji-picker-container">
-                                                <input type="email" class="form-control comment-txt" placeholder="კომენტარის დამატება" data-emojiable="true">
-                                                <input type="file" class="attach">
-                                                <button class="clicker">
-                                                    <i class="fas fa-camera"></i>
-                                                </button>
-                                            </p>
-                                            <input type="submit" value="გაგზავნა" class="sent">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="news-feed_item">
-                                    <div class="news-feed_item_top d-flex justify-content-between align-items-center">
-                                        <div class="d-flex align-items-center">
-                                            <img src="uploads/images/user@2x.png" alt="">
-                                            <div class="username">ნიკოლოზ ედიშერაშვილი</div>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <i class="far fa-clock"></i>
-                                            <span class="date">8 აგვისტო , 2018</span>
-                                        </div>
-                                    </div>
-                                    <div class="news-feed_item_desc">
+                                <div class="news-feed_item_desc">
+                                    <div class="descr">
                                         <div class="news-feed_title">თქვენი აზრით, რომელი უნარი წარმოადგენს მენეჯერისთვის უმთავრეს ფაქტორს ?</div>
                                         <div class="polling">
                                             <div class="d-flex polling-item align-items-center">
@@ -980,87 +1181,355 @@
                                                 <div class="qty">50</div>
                                             </div>
                                         </div>
-                                        <div class="news-feed_item_opt d-flex align-items-center justify-content-between">
-                                            <div class="d-flex">
-                                                <button class="like-btn like-post">
-                                                    მომწონს
-                                                </button>
-                                                <span class="seen">ნანახია 342-ჯერ</span>
+                                    </div>
+                                    <div class="descr_edit">
+                                        <textarea data-autoresize class="title_edit"></textarea>
+                                        <div class="polling">
+                                            <div class="d-flex polling-item align-items-center">
+                                                <label class="radio-btn">
+                                                    <input type="radio" checked="checked" name="radio">
+                                                    <span class="checkmark"></span>
+                                                    <div class="answer-block">
+                                                        <textarea data-autoresize class="form-control comment-txt txt_edit">კონცეპტუალური უნარი</textarea>
+                                                        <div class="answer"></div>
+                                                        <span>51%</span>
+                                                    </div>
+                                                </label>
+                                                <div class="qty">50</div>
                                             </div>
-                                            <div class="d-flex">
-                                                <button class="likes d-flex align-items-center">
-                                                    <div class="likes-qty">34</div>
-                                                    მოსწონს
-                                                </button>
-                                                <button class="likes show-comments d-flex align-items-center">
-                                                    <div class="comment-qty">0 კომენტარი</div>
-                                                </button>
+                                            <div class="d-flex polling-item align-items-center">
+                                                <label class="radio-btn">
+                                                    <input type="radio" checked="checked" name="radio">
+                                                    <span class="checkmark"></span>
+                                                    <div class="answer-block">
+                                                        <div class="answer-title">ტექნიკური უნარი</div>
+                                                        <div class="answer"></div>
+                                                        <span>51%</span>
+                                                    </div>
+                                                </label>
+                                                <div class="qty">50</div>
                                             </div>
+                                            <div class="d-flex polling-item align-items-center">
+                                                <label class="radio-btn">
+                                                    <input type="radio" checked="checked" name="radio">
+                                                    <span class="checkmark"></span>
+                                                    <div class="answer-block">
+                                                        <div class="answer-title">ადამიანებთან ურთიერთობები</div>
+                                                        <div class="answer"></div>
+                                                        <span>51%</span>
+                                                    </div>
+                                                </label>
+                                                <div class="qty">50</div>
+                                            </div>
+                                        </div>
+                                        <button class="save">შენახვა</button>
+                                    </div>
+                                    <div class="news-feed_item_opt d-flex align-items-center justify-content-between">
+                                        <div class="d-flex">
+                                            <button class="like-btn like-post">
+                                                მომწონს
+                                            </button>
+                                            <span class="seen">ნანახია 342-ჯერ</span>
+                                        </div>
+                                        <div class="d-flex">
+                                            <button class="likes d-flex align-items-center">
+                                                <div class="likes-qty">34</div>
+                                                მოსწონს
+                                            </button>
+                                            <button class="likes show-comments d-flex align-items-center">
+                                                <div class="comment-qty">0 კომენტარი</div>
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="add-comment">
-                                        <div class="d-flex justify-content-between">
-                                            <p class="lead emoji-picker-container">
-                                                <input type="email" class="form-control comment-txt" placeholder="კომენტარის დამატება" data-emojiable="true">
-                                                <input type="file" class="attach">
-                                                <button class="clicker">
-                                                    <i class="fas fa-camera"></i>
-                                                </button>
-                                            </p>
-                                            <input type="submit" value="გაგზავნა" class="sent">
-                                        </div>
+                                </div>
+                                <div class="add-comment">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="lead emoji-picker-container">
+                                            <input type="email" class="form-control comment-txt" placeholder="კომენტარის დამატება" data-emojiable="true">
+                                            <input type="file" class="attach">
+                                            <button class="clicker">
+                                                <i class="fas fa-camera"></i>
+                                            </button>
+                                        </p>
+                                        <input type="submit" value="გაგზავნა" class="sent">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-3 d-none d-xl-block">
-                            <div class="events">
-                                <div class="events-block">
-                                    <div class="event-block_top d-flex align-items-center justify-content-between">
-                                        <div class="title">უახლოესი ღონისძიებები</div>
-                                        <img src="images/event-icon@2x.png" alt="">
-                                    </div>
-                                    <div class="event-block_item">
-                                        <div class="img">
-                                            <img src="uploads/images/event1@2x.png" alt="">
-                                        </div>
-                                        <div class="row justify-content-between event-desc">
-                                            <div class="col-xl-7">
-                                                <div class="event-title">კორპორატიული საღამო</div>
-                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
-                                            </div>
-                                            <div class="col-xl-5 d-flex justify-content-end">
-                                                <button class="going">
-                                                    <span>მივდივარ</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <a href="#!" class="more">ვრცლად</a>
-                                    </div>
-                                    <div class="event-block_item">
-                                        <div class="img">
-                                            <img src="uploads/images/event1@2x.png" alt="">
-                                        </div>
-                                        <div class="row justify-content-between event-desc">
-                                            <div class="col-xl-7">
-                                                <div class="event-title">საქველმოქმედო ღონისძიება
-                                                    უსახლკარო ბავშვების
-                                                    დასახმარებლად</div>
-                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
-                                            </div>
-                                            <div class="col-xl-5 d-flex justify-content-end">
-                                                <button class="going">
-                                                    <span>მივდივარ</span>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <a href="#!" class="more">ვრცლად</a>
-                                    </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 d-none d-xl-block">
+                        <div class="events">
+                            <div class="events-block">
+                                <div class="event-block_top d-flex align-items-center justify-content-between">
+                                    <div class="title">უახლოესი ღონისძიებები</div>
+                                    <img src="images/event-icon@2x.png" alt="">
                                 </div>
-                                <div class="events-block">
-                                    <div class="event-block_top d-flex align-items-center justify-content-between">
-                                        <div class="title">დაბადების დღეები</div>
-                                        <img src="images/birth-icon@2x.png" alt="">
+                                <div class="event-block_item">
+                                    <div class="img">
+                                        <img src="uploads/images/event1@2x.png" alt="">
+                                    </div>
+                                    <div class="row justify-content-between event-desc">
+                                        <div class="col-xl-7">
+                                            <div class="event-title">კორპორატიული საღამო</div>
+                                            <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                        </div>
+                                        <div class="col-xl-5 d-flex justify-content-end">
+                                            <button class="going">
+                                                <span>მივდივარ</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <a href="#!" class="more">ვრცლად</a>
+                                </div>
+                                <div class="event-block_item">
+                                    <div class="img">
+                                        <img src="uploads/images/event1@2x.png" alt="">
+                                    </div>
+                                    <div class="row justify-content-between event-desc">
+                                        <div class="col-xl-7">
+                                            <div class="event-title">საქველმოქმედო ღონისძიება
+                                                უსახლკარო ბავშვების
+                                                დასახმარებლად</div>
+                                            <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                        </div>
+                                        <div class="col-xl-5 d-flex justify-content-end">
+                                            <button class="going">
+                                                <span>მივდივარ</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <a href="#!" class="more">ვრცლად</a>
+                                </div>
+                            </div>
+                            <div class="events-block birth-events">
+                                <div class="event-block_top d-flex align-items-center justify-content-between">
+                                    <div class="title">დაბადების დღეები</div>
+                                    <img src="images/birth-icon@2x.png" alt="">
+                                </div>
+                                <div class="birthdays">
+                                    <div class="birthday-item">
+                                        <div class="d-flex">
+                                            <div class="img">
+                                                <img src="uploads/images/user1@2x.png" alt="">
+                                                <span class="age">23</span>
+                                            </div>
+                                            <div class="birthday-desc">
+                                                <a href="#!" class="username">მარიამ ლორთქიფანიძე</a>
+                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                                <div class="d-flex buttons-row">
+                                                    <button class="congr">მილოცვა</button>
+                                                    <a href="#!" class="sms">მიწერა</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="birthday-item">
+                                        <div class="d-flex">
+                                            <div class="img">
+                                                <img src="uploads/images/user1@2x.png" alt="">
+                                                <span class="age">3</span>
+                                            </div>
+                                            <div class="birthday-desc">
+                                                <a href="#!" class="username">თინიკო კუტალაძე</a>
+                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                                <div class="d-flex buttons-row">
+                                                    <button class="congr">მილოცვა</button>
+                                                    <a href="#!" class="sms">მიწერა</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="birthday-item">
+                                        <div class="d-flex">
+                                            <div class="img">
+                                                <img src="uploads/images/user1@2x.png" alt="">
+                                                <span class="age">23</span>
+                                            </div>
+                                            <div class="birthday-desc">
+                                                <a href="#!" class="username">მარიამ ლორთქიფანიძე</a>
+                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                                <div class="d-flex buttons-row">
+                                                    <button class="congr">მილოცვა</button>
+                                                    <a href="#!" class="sms">მიწერა</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="birthday-item">
+                                        <div class="d-flex">
+                                            <div class="img">
+                                                <img src="uploads/images/user1@2x.png" alt="">
+                                                <span class="age">3</span>
+                                            </div>
+                                            <div class="birthday-desc">
+                                                <a href="#!" class="username">თინიკო კუტალაძე</a>
+                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                                <div class="d-flex buttons-row">
+                                                    <button class="congr">მილოცვა</button>
+                                                    <a href="#!" class="sms">მიწერა</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="birthday-item">
+                                        <div class="d-flex">
+                                            <div class="img">
+                                                <img src="uploads/images/user1@2x.png" alt="">
+                                                <span class="age">23</span>
+                                            </div>
+                                            <div class="birthday-desc">
+                                                <a href="#!" class="username">მარიამ ლორთქიფანიძე</a>
+                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                                <div class="d-flex buttons-row">
+                                                    <button class="congr">მილოცვა</button>
+                                                    <a href="#!" class="sms">მიწერა</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="birthday-item">
+                                        <div class="d-flex">
+                                            <div class="img">
+                                                <img src="uploads/images/user1@2x.png" alt="">
+                                                <span class="age">3</span>
+                                            </div>
+                                            <div class="birthday-desc">
+                                                <a href="#!" class="username">თინიკო კუტალაძე</a>
+                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                                <div class="d-flex buttons-row">
+                                                    <button class="congr">მილოცვა</button>
+                                                    <a href="#!" class="sms">მიწერა</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="birthday-item">
+                                        <div class="d-flex">
+                                            <div class="img">
+                                                <img src="uploads/images/user1@2x.png" alt="">
+                                                <span class="age">23</span>
+                                            </div>
+                                            <div class="birthday-desc">
+                                                <a href="#!" class="username">მარიამ ლორთქიფანიძე</a>
+                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                                <div class="d-flex buttons-row">
+                                                    <button class="congr">მილოცვა</button>
+                                                    <a href="#!" class="sms">მიწერა</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="birthday-item">
+                                        <div class="d-flex">
+                                            <div class="img">
+                                                <img src="uploads/images/user1@2x.png" alt="">
+                                                <span class="age">3</span>
+                                            </div>
+                                            <div class="birthday-desc">
+                                                <a href="#!" class="username">თინიკო კუტალაძე</a>
+                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                                <div class="d-flex buttons-row">
+                                                    <button class="congr">მილოცვა</button>
+                                                    <a href="#!" class="sms">მიწერა</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="birthday-item">
+                                        <div class="d-flex">
+                                            <div class="img">
+                                                <img src="uploads/images/user1@2x.png" alt="">
+                                                <span class="age">23</span>
+                                            </div>
+                                            <div class="birthday-desc">
+                                                <a href="#!" class="username">მარიამ ლორთქიფანიძე</a>
+                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                                <div class="d-flex buttons-row">
+                                                    <button class="congr">მილოცვა</button>
+                                                    <a href="#!" class="sms">მიწერა</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="birthday-item">
+                                        <div class="d-flex">
+                                            <div class="img">
+                                                <img src="uploads/images/user1@2x.png" alt="">
+                                                <span class="age">3</span>
+                                            </div>
+                                            <div class="birthday-desc">
+                                                <a href="#!" class="username">თინიკო კუტალაძე</a>
+                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                                <div class="d-flex buttons-row">
+                                                    <button class="congr">მილოცვა</button>
+                                                    <a href="#!" class="sms">მიწერა</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="birthday-item">
+                                        <div class="d-flex">
+                                            <div class="img">
+                                                <img src="uploads/images/user1@2x.png" alt="">
+                                                <span class="age">23</span>
+                                            </div>
+                                            <div class="birthday-desc">
+                                                <a href="#!" class="username">მარიამ ლორთქიფანიძე</a>
+                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                                <div class="d-flex buttons-row">
+                                                    <button class="congr">მილოცვა</button>
+                                                    <a href="#!" class="sms">მიწერა</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="birthday-item">
+                                        <div class="d-flex">
+                                            <div class="img">
+                                                <img src="uploads/images/user1@2x.png" alt="">
+                                                <span class="age">3</span>
+                                            </div>
+                                            <div class="birthday-desc">
+                                                <a href="#!" class="username">თინიკო კუტალაძე</a>
+                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                                <div class="d-flex buttons-row">
+                                                    <button class="congr">მილოცვა</button>
+                                                    <a href="#!" class="sms">მიწერა</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="birthday-item">
+                                        <div class="d-flex">
+                                            <div class="img">
+                                                <img src="uploads/images/user1@2x.png" alt="">
+                                                <span class="age">23</span>
+                                            </div>
+                                            <div class="birthday-desc">
+                                                <a href="#!" class="username">მარიამ ლორთქიფანიძე</a>
+                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                                <div class="d-flex buttons-row">
+                                                    <button class="congr">მილოცვა</button>
+                                                    <a href="#!" class="sms">მიწერა</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="birthday-item">
+                                        <div class="d-flex">
+                                            <div class="img">
+                                                <img src="uploads/images/user1@2x.png" alt="">
+                                                <span class="age">3</span>
+                                            </div>
+                                            <div class="birthday-desc">
+                                                <a href="#!" class="username">თინიკო კუტალაძე</a>
+                                                <span class="date d-flex align-items-center"><span>8</span> აგვისტო</span>
+                                                <div class="d-flex buttons-row">
+                                                    <button class="congr">მილოცვა</button>
+                                                    <a href="#!" class="sms">მიწერა</a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="birthday-item">
                                         <div class="d-flex">
@@ -1095,69 +1564,73 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="d-flex justify-content-center">
+                                    <button class="more-birth">იხილეთ მეტი</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+</main>
 
-    <footer class="site__footer">
-        <div class="container">
-            <div class="footer">
-                <div class="d-flex align-items-center justify-content-between">
-                    <span>ყველა უფლება დაცულია. 2018</span>
-                    <a href="#!"><img src="images/mobility@2x.png" alt=""></a>
-                </div>
+<footer class="site__footer">
+    <div class="container">
+        <div class="footer">
+            <div class="d-flex align-items-center justify-content-between">
+                <span>ყველა უფლება დაცულია. 2018</span>
+                <a href="#!"><img src="images/mobility@2x.png" alt=""></a>
             </div>
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <!--Plugins-->
-    <script src="plugins/jquery/jquery-3.3.1.min.js"></script>
-    <script src="plugins/bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
-    <script src="plugins/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
-    <script src="plugins/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="plugins/bootstrap-select/dist/js/bootstrap-select.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+<!--Plugins-->
+<script src="plugins/jquery/jquery-3.3.1.min.js"></script>
+<script src="plugins/bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
+<script src="plugins/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+<script src="plugins/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="plugins/bootstrap-select/dist/js/bootstrap-select.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
 
 
-    <!-- Begin emoji-picker JavaScript -->
-    <script src="chat/js/config.js"></script>
-    <script src="chat/js/util.js"></script>
-    <script src="chat/js/jquery.emojiarea.js"></script>
-    <script src="chat/js/emoji-picker.js"></script>
-    <!-- End emoji-picker JavaScript -->
+<!-- Begin emoji-picker JavaScript -->
+<script src="chat/js/config.js"></script>
+<script src="chat/js/util.js"></script>
+<script src="chat/js/jquery.emojiarea.js"></script>
+<script src="chat/js/emoji-picker.js"></script>
+<!-- End emoji-picker JavaScript -->
 
-    <!--Custom Scripts-->
-    <script src="minJs/default.min.js"></script>
-    <script src="minJs/index.min.js"></script>
+<!--Custom Scripts-->
+<script src="minJs/default.min.js"></script>
+<script src="minJs/index.min.js"></script>
 
-    <script>
-        $(function() {
-            // Initializes and creates emoji set from sprite sheet
-            window.emojiPicker = new EmojiPicker({
-                emojiable_selector: '[data-emojiable=true]',
-                assetsPath: 'chat/img/',
-                popupButtonClasses: 'fa fa-smile-o'
-            });
-            // Finds all elements with `emojiable_selector` and converts them to rich emoji input fields
-            // You may want to delay this step if you have dynamically created input fields that appear later in the loading process
-            // It can be called as many times as necessary; previously converted input fields will not be converted again
-            window.emojiPicker.discover();
+<script>
+    $(function() {
+        // Initializes and creates emoji set from sprite sheet
+        window.emojiPicker = new EmojiPicker({
+            emojiable_selector: '[data-emojiable=true]',
+            assetsPath: 'chat/img/',
+            popupButtonClasses: 'fa fa-smile-o'
         });
-    </script>
-    <script>
-        // Google Analytics
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        // Finds all elements with `emojiable_selector` and converts them to rich emoji input fields
+        // You may want to delay this step if you have dynamically created input fields that appear later in the loading process
+        // It can be called as many times as necessary; previously converted input fields will not be converted again
+        window.emojiPicker.discover();
+    });
+</script>
+<script>
+    // Google Analytics
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-49610253-3', 'auto');
-        ga('send', 'pageview');
-    </script>
+    ga('create', 'UA-49610253-3', 'auto');
+    ga('send', 'pageview');
+</script>
 
 </body>
 </html>
